@@ -97,6 +97,8 @@
     <Content Include="images\banner-bg.png" />
     <Content Include="images\bg-main.png" />
     <Content Include="images\card-missing.png" />
+    <Content Include="images\cc_bill.png" />
+    <Content Include="images\cc_transactions.png" />
     <Content Include="images\contact-bg.png" />
     <Content Include="images\credit-card.png" />
     <Content Include="images\failed.png" />
@@ -108,7 +110,11 @@
     <Content Include="images\icon-4.png" />
     <Content Include="images\instagram-icon.png" />
     <Content Include="images\linkdin-icon.png" />
+    <Content Include="images\loan_apply.png" />
     <Content Include="images\logo4.png" />
+    <Content Include="images\pay_bill.png" />
+    <Content Include="images\points.png" />
+    <Content Include="images\reminder.png" />
     <Content Include="images\search-icon.png" />
     <Content Include="images\success.png" />
     <Content Include="images\transaction-list.png" />
