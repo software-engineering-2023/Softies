@@ -69,7 +69,9 @@
   <ItemGroup>
     <Content Include="about.html" />
     <Content Include="banker.html" />
+    <Content Include="Bank_Transactions.html" />
     <Content Include="clients.html" />
+    <Content Include="Client_Home.html" />
     <Content Include="contact.html" />
     <Content Include="css\animate.min.css" />
     <Content Include="css\bootstrap-grid.css" />
@@ -94,7 +96,10 @@
     <Content Include="images\about-bg.png" />
     <Content Include="images\banner-bg.png" />
     <Content Include="images\bg-main.png" />
+    <Content Include="images\card-missing.png" />
     <Content Include="images\contact-bg.png" />
+    <Content Include="images\credit-card.png" />
+    <Content Include="images\failed.png" />
     <Content Include="images\fb-icon.png" />
     <Content Include="images\footer-bg.png" />
     <Content Include="images\icon-1.png" />
@@ -105,9 +110,12 @@
     <Content Include="images\linkdin-icon.png" />
     <Content Include="images\logo4.png" />
     <Content Include="images\search-icon.png" />
+    <Content Include="images\success.png" />
+    <Content Include="images\transaction-list.png" />
     <Content Include="images\twitter-icon.png" />
     <Content Include="images\youtub-icon.png" />
     <Content Include="index.html" />
+    <Content Include="CC_Issues_Page.html" />
     <Content Include="js\bootstrap.bundle.js" />
     <Content Include="js\bootstrap.bundle.min.js" />
     <Content Include="js\bootstrap.js" />
@@ -122,6 +130,7 @@
     <Content Include="js\popper.min.js" />
     <Content Include="js\slider-setting.js" />
     <Content Include="services.html" />
+    <Content Include="Technical_Issue_Page.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
