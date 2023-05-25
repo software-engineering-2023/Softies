@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 <!-- site metas -->
-<title>Contact</title>
+<title>Credit Card Application</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">	
@@ -36,7 +36,13 @@
     <div class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="logo"><a href="index.html"><img src="images/logo4.png"></a></div>
+                <div class="logo"><a href="index.html"><img class = new src="images/logo4.png"> <style>
+                    .new {
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                    }
+                  </style></a></div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -77,13 +83,13 @@
                     <h1 class="contact_text">Credit Card application</h1>
                     <div class="contact_main">
                         <div class="mail_section">
-                            <label for="fullName" style="font-size: 20px;font-weight: bold; color: white; margin-right: 20px;">Full name</label>
+                            <label for="fullName" style="font-size: 20px;font-weight: bold; color: white; margin-right: 20px;">Full name*</label>
                                
                             <!-- Create an input element and set its type, name, id and placeholder attributes -->
                             <input type="Name"  name= "fullName" id="fullName" placeholder="Enter your full name"/>
                             <div>
                                 <!-- Create a label element and set its text content -->
-                                <label style="font-size: 20px;font-weight: bold; color: white; margin-right: 20px;">Gender</label>
+                                <label style="font-size: 20px;font-weight: bold; color: white; margin-right: 20px;">Gender*</label>
                               
                                 <!-- Create a div element to wrap the radio buttons and set its style attribute -->
                                <!-- <div style="display: flex; align-items: center;"> -->
@@ -91,43 +97,43 @@
                                   <input type="radio" name="gender" id="male" value="male" style="font-size: 20px;font-weight: bold; color: white;"/>
                               
                                   <!-- Create a label element and set its text content and for attribute -->
-                                  <label for="male" style="font-size: 20px; color: black;">Male</label>
+                                  <label for="male" style="font-size: 20px; color: white;;">Male</label>
                               
                                   <!-- Create an input element with a type of "radio" and set its name, id and value attributes -->
                                   <input type="radio" name="gender" id="female" value="female" />
                               
                                   <!-- Create a label element and set its text content and for attribute -->
-                                  <label for="female" style="font-size: 20px; color: black;">Female</label>
+                                  <label for="female" style="font-size: 20px; color: white;">Female</label>
                               
                                <!-- </div>-->
                               </div>
-                            <label for="birthdate" style="font-size: 20px;font-weight: bold; color: white; margin-right: 10px;"> Birthdate </label>
+                            <label for="birthdate" style="font-size: 20px;font-weight: bold; color: white; margin-right: 10px;"> Birthdate* </label>
                             <input type="date" name="birthdate"  id="birthdate" placeholder="MM/DD/YYYY"/>
                            <!-- Create a div element to wrap the loan amount input and set its style attribute -->
                            <div>
                             <!-- Create a label element and set its text content and for attribute -->
-                            <label for="nationalID" style="font-size: 20px;font-weight: bold; color: white;margin-right: 10px;">National ID</label>
+                            <label for="nationalID" style="font-size: 20px;font-weight: bold; color: white;margin-right: 10px;">National ID*</label>
                           
                             <!-- Create an input element and set its type, name, id, placeholder and maxlength attributes -->
                             <input type="text" name="nationalID" id="nationalID" placeholder="Enter your 14-digit national ID no" maxlength="14" />
                           </div>
                            <div style="display: flex; align-items: center; ">
                            <!-- Create a label element and set its text content, for and style attributes -->
-                           <label for="loanAmount" style="font-size: 20px;font-weight: bold; color: white;margin-right: 10px;">Credit amount </label>
+                           <label for="loanAmount" style="font-size: 20px;font-weight: bold; color: white;margin-right: 10px;">Credit amount* </label>
 
                             <!-- Create an input element and set its type, name, id, placeholder, min and style attributes -->
                             <input type="number" name="ccAmount" id="ccAmount" placeholder="EGP" min="0" style="width: 200px; height: 30px; border: 1px solid gray; border-radius: 5px; padding: 5px;"/>
                             </div>
                             <div>
                                 <!-- Create a label element and set its text content and for attribute -->
-                                <label for="pdfInput" style="font-size: 20px;font-weight: bold; color: white;margin-right: 10px;">Cerificates (optional)</label>
+                                <label for="pdfInput" style="font-size: 20px;font-weight: bold; color: white;margin-right: 0px;">Proof of income </label>
                               
                                 <!-- Create an input element and set its type, name, id and accept attributes -->
-                                <input type="file"  name="pdfInput" id="pdfInput" accept="application/pdf" />
+                                <input type="file"  name="pdfInput" id="pdfInput" accept="application/pdf" style=" color: white;">/>
                               </div>
                               <div>
                                 <!-- Create a label element and set its text content and for attribute -->
-                                <label for="bankAccountNumber" style="font-size: 20px;font-weight: bold; color: white;margin-right: 10px;">Bank account number</label>
+                                <label for="bankAccountNumber" style="font-size: 20px;font-weight: bold; color: white;margin-right: 10px;">Bank account number*</label>
                               
                                 <!-- Create an input element and set its type, name, id, placeholder and maxlength attributes -->
                                 <input
