@@ -118,6 +118,7 @@
     <Content Include="images\search-icon.png" />
     <Content Include="images\success.png" />
     <Content Include="images\transaction-list.png" />
+    <Content Include="images\transfer.png" />
     <Content Include="images\twitter-icon.png" />
     <Content Include="images\youtub-icon.png" />
     <Content Include="index.html" />
@@ -137,6 +138,7 @@
     <Content Include="js\slider-setting.js" />
     <Content Include="services.html" />
     <Content Include="Technical_Issue_Page.html" />
+    <Content Include="transfer.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
