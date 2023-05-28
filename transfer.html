@@ -80,6 +80,7 @@
                 <input type="text"
                        name="From"
                        id="from"
+                       maxlength="14"
                        placeholder="Please enter account number..."
                        class="formbold-form-input" />
             </div>
@@ -87,6 +88,7 @@
                 <label for="to" class="formbold-form-label"> To Account *</label>
                 <input type="text"
                        name="To"
+                       maxlength="14"
                        id="to"
                        placeholder="Please enter destination account number..."
                        class="formbold-form-input" />
@@ -302,7 +304,7 @@
             var type = element.options[element.selectedIndex].text;
             var date = document.querySelector("input[name=Date]").value;
             var time = document.querySelector("input[name=Time]").value;
-
+            
             sessionStorage.setItem("from", from);
             sessionStorage.setItem("to", to);
             sessionStorage.setItem("amount", amount);
@@ -312,11 +314,27 @@
 
             // check if the name and course are not empty
             if (from && to && amount && type && date && time) {
-                if (amount < 200) {
+                if (isNaN(to)) {
+                    alert("Invalid account number. Please enter a number.");
+                            }
+               else if (isNaN(from)) {
+                    alert("Invalid destination account number. Please enter a number.");
+                            }
+                
+                else if (from.length <14) {
+                    alert("Invalid account number. Please enter a 14 digits number.");
+                            } 
+                else if (to.length<14) {
+                    alert("Invalid destination account number. Please enter a 14 digits number.");
+                            }                        
+                else if (amount < 200) {
                     alert("Please enter an amount greater than EGP 200");
-                } else if (amount > 100000) {
+                } 
+                else if (amount > 100000) {
                     alert("Insufficient funds");
-                } else {
+                }
+                
+                else {
                     alert("Transaction successful! \nTransaction TRAN234567890 HAS BEEN PROCESSED");
                     window.location.assign("Client_Home.html");
                 }
@@ -354,7 +372,7 @@
             $(".fancybox").fancybox({
                 openEffect: "none",
                 closeEffect: "none"
-            });
+            })});
     </script>
 </body>
 </html>
