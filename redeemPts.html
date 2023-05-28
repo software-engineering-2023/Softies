@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 <!-- site metas -->
-<title>Credit Card Transactions</title>
+<title>Loan Application</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">	
@@ -76,111 +76,25 @@
             </nav>
         </div>
     </div>
-    <div class="content">
 
-        <div class="container">
-            <h2 class="mb-5">My Credit Card Transactions</h2>
-            <h3 class="mb-5">Number: 0123 4567 8910 89</h3>
-            <div class="table-responsive">
-
-                <table class="table custom-table">
-                    <thead>
-                        <tr>
-
-                            <th scope="col">ID</th>
-                            <th scope="col">Details</th>
-                            <th scope="col">Amount</th>
-                            <th scope="col"></th>
-                            
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr scope="row">
-
-
-
-                            <td>
-                                CCGE139234264
-                            </td>
-                            <td>
-                                ATM Withdrawl
-                                <small class="d-block">28 Sep 2022, at 5:35PM</small>
-                            </td>
-                            <td style="color: red "> - EGP 4000.00 </td>
-                            <td>
-                                <a href="#"><img src="images/take1.png"></a>
-                            </td>
-                            
-
-                        </tr>
-
-                        <tr>
-
-                            <td>
-                                CCRU648273923
-                            </td>
-                            <td>
-                                Target
-                                <small class="d-block">1 Oct 2022, at 11:48AM</small>
-                            </td>
-                            <td style="color: red "> - EGP 350.00 </td>
-                            <td>
-                                <a href="#"><img src="images/take1.png"></a>
-                            </td>
-                            
-                        </tr>
-                        <tr>
-
-                            <td>
-                                CCBJ762408256
-                            </td>
-                            <td>
-                                Amazon Refund
-                                <small class="d-block">11 Nov 2022, at 7:22PM</small>
-                            </td>
-                            <td style="color: green"> EGP 500.00 </td>
-                            <td>
-                                <a href="#"><img src="images/give1.png"></a>
-                            </td>
-                           
-                        </tr>
-                        <tr>
-
-                            <td>
-                                CCNG376502458
-                            </td>
-                            <td>
-                                Mango
-                                <small class="d-block">7 Jan 2023, at 3:18PM</small>
-                            </td>
-                            <td style="color: red "> - EGP 1499.00 </td>
-                            <td>
-                                <a href="#"><img src="images/take1.png"></a>
-                            </td>
-                            
-                        </tr>
-                        <tfoot>
-                            <tr>
-                              <td colspan="4">Remaining credit amount: EGP 1651.00</td>
-                              <head>
-                                <style>
-                                  tfoot td {
-                                    font-weight: bold;
-                                    text-align: center;
-                                    background-color: lightgray;
-                                  }
-                                </style>
-                              </head>
-                            </tr>
-                          </tfoot>
-                    </tbody>
-                </table>
-            </div>
-
-
-        </div>
-
-    </div>
+    <head>
+        <title>Redeem Credit Card Points</title>
+      </head>
+      <body>
+        <h1>Redeem Your Credit Card Reward Points</h1>
+        <p>You have earned <span id="points">1000</span> points on your credit card. You can redeem them for various rewards, such as gift cards, airfare, statement credits, or donations.</p>
+        <form action="redeem.php" method="post">
+          <label for="reward">Select a reward option:</label>
+          <select id="reward" name="reward">
+            <option value="giftcard">Gift Card</option>
+            <option value="airfare">Airfare</option>
+            <option value="statement">Statement Credit</option>
+            <option value="donation">Donation</option>
+          </select>
+          <input type="submit" value="Redeem">
+        </form>
+      </body>
+      </html>
 
 
 
@@ -199,6 +113,9 @@
 
 
 
+
+
+    <!--footer section start -->
     <div class="footer_section layout_padding">
         <div class="container">
             <div class="social_icon">
@@ -232,8 +149,18 @@
     <script src="js/plugin.js"></script>
     <script>
         
-       
-     
+
+
+
+
+
+
+
+
+
+
+
+
     </script>
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
