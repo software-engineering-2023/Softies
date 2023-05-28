@@ -73,18 +73,18 @@
 
             <div class="table-responsive">
 
-                <table class="table custom-table">
+                <table class="table custom-table" id="table">
                     <thead>
                         <tr>
 
                             <th scope="col">ID</th>
-                            <th scope="col" id="to">Details</th>
-                            <th scope="col" id="amount">Amount</th>
+                            <th scope="col">Details</th>
+                            <th scope="col" >Amount</th>
                             <th scope="col"></th>
                             <th scope="col">Status</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="table_body">
                         <tr scope="row">
 
 
@@ -128,11 +128,11 @@
                                 Cash Deposit
                                 <small class="d-block">11 Nov 2022, at 7:22PM</small>
                             </td>
-                            <td> EGP 500.00 </td>
+                            <td> - EGP 500.00 </td>
                             <td>
-                                <a href="#"><img src="images/failed.png"></a>
+                                <a href="#"><img src="images/success.png"></a>
                             </td>
-                            <td>Failed</td>
+                            <td>Successful</td>
                         </tr>
                         <tr>
 
@@ -144,20 +144,6 @@
                                 <small class="d-block">7 Jan 2023, at 3:18PM</small>
                             </td>
                             <td> - EGP 1499.00 </td>
-                            <td>
-                                <a href="#"><img src="images/success.png"></a>
-                            </td>
-                            <td>Successful</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                TRAN792831684
-                            </td>
-                            <td>
-                                Zara
-                                <small class="d-block"><span id="date"></span>, at <span id="time"></span></small>
-                            </td>
-                            <td><span id="amount"></span></td>
                             <td>
                                 <a href="#"><img src="images/success.png"></a>
                             </td>
@@ -227,6 +213,51 @@
             document.getElementById("to").innerHTML = transfer.to;
             document.getElementById("amount").innerHTML = transfer.amount;
         }
+    </script>
+    <script>
+        function myFunction() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var to = urlParams.get('to');
+            var amount = urlParams.get('amount');
+            var date = urlParams.get('date');
+            var time = urlParams.get('time');
+
+            document.getElementById("to").innerHTML = to;
+            document.getElementById("amount").innerHTML = amount;
+
+            }
+            var from = sessionStorage.getItem("from");
+            var to = sessionStorage.getItem("to");
+            var amount = sessionStorage.getItem("amount");
+            var date = sessionStorage.getItem("date");
+            var time = sessionStorage.getItem("time");
+            var table = document.getElementById("table_body");
+            if (to && date && amount) {
+                var row = table.insertRow(-1);
+                //var tansactionID = row.insertCell(0);
+                //var details = row.insertCell(1);
+                //var amountintable = row.insertCell(2);
+                //var status = row.insertCell(3);
+                row.insertCell(0).innerHTML = "TRAN234567890";
+                row.insertCell(1).innerHTML = to + "\n" + date;
+                row.insertCell(2).innerHTML = "- EGP " + amount;
+                row.insertCell(3).innerHTML;
+                row.insertCell(4).innerHTML = "Pending";
+            }
+
+            //let newText = document.createTextNode("TRAN234567890");
+            //transactionID.appendChild(newText);
+            //details.appendChild(document.createTextNode(to + "\n" + date));
+            //amount.appendChild(document.createTextNode(amount));
+
+            /*var output = document.getElementById('to');
+            output.innerText = to;
+            var outputAmount = document.getElementById('amount');
+            outputAmount.innerText = "EGP " + amount;
+            var outputDate = document.getElementById('date');
+            outputDate.innerText = date;
+            var outputTime = document.getElementById('time');
+            outputTime.innerText = time;*/
     </script>
 
 </body>

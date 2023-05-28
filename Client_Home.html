@@ -80,14 +80,14 @@
     <div class="service_section layout_padding margin_0">
         <div class="container">
             <h1 class="about_text">WELCOME, CLIENT</h1>
-            <p class="about_text">Your current balance is:</p>
-            <p class="balance" onload="refreshBalance()">EGP100,000.00</p>
+            <p class="about_text" >Your current balance is:</p>
+            <p class="balance" id="current_balance" type="number" onload="refreshBalance()">EGP 100,000.00</p>
             <!--<button class="about-text" onclick="refreshBalance()">Refresh Balance</button>-->
             <p class="ipsum_text">Everything you need is one click away!</p>
             <script>
                 function refreshBalance() {
                     // Call API to get balance
-                    var balance = "$2000.00";
+                    var balance = "EGP 100,000"
                     document.querySelector(".balance").innerHTML = balance;
                 }
             </script>
@@ -215,15 +215,11 @@
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/plugin.js"></script>
     <script>
-
-
-
-
-
-
-
-
-
+        var amount = sessionStorage.getItem("amount");
+        if (amount) {
+            var currentBalance = document.getElementById("current_balance");
+            currentBalance.innerHTML = "EGP " + (100000 - amount) + ".00";
+        }
     </script>
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>

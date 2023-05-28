@@ -74,7 +74,7 @@
                 <!-- Author: FormBold Team -->
                 <!-- Learn More: https://formbold.com -->
                 <div class="formbold-form-wrapper">
-                    <form onsubmit="saveTransfer(event)">
+                    <form action="Bank_Transactions.html" method="get">
                         <div class="formbold-mb-5">
                             <label for="from" class="formbold-form-label"> From Account *</label>
                             <input type="text"
@@ -123,7 +123,6 @@
                                     <label for="time" class="formbold-form-label"> Transfer Time *</label>
                                     <input type="time"
                                            name="Time"
-                                           min="11:00"
                                            id="time"
                                            class="formbold-form-input" />
                                 </div>
@@ -299,6 +298,13 @@
                     var date = document.querySelector("input[name=Date]").value;
                     var time = document.querySelector("input[name=Time]").value;
 
+                    sessionStorage.setItem("from", from);
+                    sessionStorage.setItem("to", to);
+                    sessionStorage.setItem("amount", amount);
+                    sessionStorage.setItem("type", type);
+                    sessionStorage.setItem("date", date);
+                    sessionStorage.setItem("time", time);
+
                     // check if the name and course are not empty
                     if (from && to && amount && type && date && time) {
 
@@ -318,7 +324,6 @@
                 // add an event listener to the submit button that calls the validateForm function
                 submitButton.addEventListener("click", validateForm);
             </script>
-
             <!-- sidebar -->
             <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
             <script src="js/custom.js"></script>
@@ -332,22 +337,6 @@
                         closeEffect: "none"
                     });
             </script>
-            <script>
-                function saveTransfer(event) {
-                    event.preventDefault();
-                    var transfer = {
-                        from: document.getElementById("from").value,
-                        to: document.getElementById("to").value,
-                        amount: document.getElementById("amount").value,
-                        date: document.getElementById("date").value,
-                        time: document.getElementById("time").value,
-                        type: document.getElementById("type").value
-                    };
-                    localStorage.setItem("transfer", JSON.stringify(transfer));
-                    window.location.href = "transfers.html";
-                }
-            </script>
-
 </body>
 </html>
 
