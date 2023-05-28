@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>Clients</title>
+    <title>Transfer</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -71,286 +71,291 @@
             <h1 class="about_text">TRANSFER</h1>
         </div>
     </div>
-                <!-- Author: FormBold Team -->
-                <!-- Learn More: https://formbold.com -->
-                <div class="formbold-form-wrapper">
-                    <form action="Bank_Transactions.html" method="get">
-                        <div class="formbold-mb-5">
-                            <label for="from" class="formbold-form-label"> From Account *</label>
-                            <input type="text"
-                                   name="From"
-                                   id="from"
-                                   placeholder="Please enter account number..."
-                                   class="formbold-form-input" />
-                        </div>
-                        <div class="formbold-mb-5">
-                            <label for="to" class="formbold-form-label"> To Account *</label>
-                            <input type="text"
-                                   name="To"
-                                   id="to"
-                                   placeholder="Please enter destination account number..."
-                                   class="formbold-form-input" />
-                        </div>
-                        <div class="formbold-mb-5">
-                            <label for="amount" class="formbold-form-label"> Amount (EGP) *</label>
-                            <input type="number"
-                                   name="Amount"
-                                   id="amount"
-                                   placeholder="Please enter amount to be transfered..."
-                                   class="formbold-form-input" />
-                        </div>
-                        <div class="formbold-mb-5">
-                            <label for="type" class="formbold-form-label"> Type of Transfer *</label>
-                            <select class="formbold-form-input" name="Type" id="type">
-                                <option value="male">Internal</option>
-                                <option value="female">Domestic</option>
-                                <option value="others">International</option>
-                            </select>
-                        </div>
-                        <div class="flex flex-wrap formbold--mx-3">
-                            <div class="w-full sm:w-half formbold-px-3">
-                                <div class="formbold-mb-5 w-full">
-                                    <label for="date" class="formbold-form-label"> Transfer Date *</label>
-                                    <input type="date"
-                                           name="Date"
-                                           min="2023-05-30"
-                                           id="date"
-                                           class="formbold-form-input" />
-                                </div>
-                            </div>
-                            <div class="w-full sm:w-half formbold-px-3">
-                                <div class="formbold-mb-5">
-                                    <label for="time" class="formbold-form-label"> Transfer Time *</label>
-                                    <input type="time"
-                                           name="Time"
-                                           id="time"
-                                           class="formbold-form-input" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="formbold-btn">
-                            <a id="submit">Transfer!</a>
-                        </div>
-                    </form>
-                </div>
+    <!-- Author: FormBold Team -->
+    <!-- Learn More: https://formbold.com -->
+    <div class="formbold-form-wrapper">
+        <form action="Bank_Transactions.html" method="get">
+            <div class="formbold-mb-5">
+                <label for="from" class="formbold-form-label"> From Account *</label>
+                <input type="text"
+                       name="From"
+                       id="from"
+                       placeholder="Please enter account number..."
+                       class="formbold-form-input" />
             </div>
-            <style>
-                * {
-                    margin: 0;
-                    padding: 0;
-                    box-sizing: border-box;
-                }
-
-                body {
-                    font-family: "Inter", Arial, Helvetica, sans-serif;
-                }
-
-                .formbold-mb-5 {
-                    margin-bottom: 20px;
-                }
-
-                .formbold-pt-3 {
-                    padding-top: 12px;
-                }
-
-                .formbold-main-wrapper {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    padding: 48px;
-                }
-
-                .formbold-form-wrapper {
-                    margin: 0 auto;
-                    max-width: 550px;
-                    width: 100%;
-                    background: white;
-                }
-
-                .formbold-form-label {
-                    display: block;
-                    font-weight: 500;
-                    font-size: 16px;
-                    color: #07074d;
-                    margin-bottom: 12px;
-                }
-
-                .formbold-form-label-2 {
-                    font-weight: 600;
-                    font-size: 20px;
-                    margin-bottom: 20px;
-                }
-
-                .formbold-form-input {
-                    width: 100%;
-                    padding: 12px 24px;
-                    border-radius: 6px;
-                    border: 1px solid #e0e0e0;
-                    background: white;
-                    font-weight: 500;
-                    font-size: 16px;
-                    color: #6b7280;
-                    outline: none;
-                    resize: none;
-                }
-
-                    .formbold-form-input:focus {
-                        border-color: #6a64f1;
-                        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
-                    }
-
-                .formbold-btn {
-                    text-align: center;
-                    font-size: 16px;
-                    border-radius: 6px;
-                    padding: 14px 32px;
-                    border: none;
-                    font-weight: 600;
-                    background-color: #6a64f1;
-                    color: white;
-                    width: 100%;
-                    cursor: pointer;
-                }
-
-                    .formbold-btn:hover {
-                        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
-                    }
-
-                .formbold--mx-3 {
-                    margin-left: -12px;
-                    margin-right: -12px;
-                }
-
-                .formbold-px-3 {
-                    padding-left: 12px;
-                    padding-right: 12px;
-                }
-
-                .flex {
-                    display: flex;
-                }
-
-                .flex-wrap {
-                    flex-wrap: wrap;
-                }
-
-                .w-full {
-                    width: 100%;
-                }
-
-                @media (min-width: 540px) {
-                    .sm\:w-half {
-                        width: 50%;
-                    }
-                }
-            </style>
-            <!--footer section start -->
-            <div class="footer_section layout_padding">
-                <div class="container">
-                    <div class="social_icon">
-                        <ul>
-                            <li><a href="#"><img src="images/fb-icon.png"></a></li>
-                            <li><a href="#"><img src="images/twitter-icon.png"></a></li>
-                            <li><a href="#"><img src="images/linkdin-icon.png"></a></li>
-                            <li><a href="#"><img src="images/instagram-icon.png"></a></li>
-                            <li><a href="#"><img src="images/youtub-icon.png"></a></li>
-                        </ul>
+            <div class="formbold-mb-5">
+                <label for="to" class="formbold-form-label"> To Account *</label>
+                <input type="text"
+                       name="To"
+                       id="to"
+                       placeholder="Please enter destination account number..."
+                       class="formbold-form-input" />
+            </div>
+            <div class="formbold-mb-5">
+                <label for="amount" class="formbold-form-label"> Amount (EGP) *</label>
+                <input type="number"
+                       name="Amount"
+                       id="amount"
+                       placeholder="Please enter amount to be transfered..."
+                       class="formbold-form-input" />
+            </div>
+            <div class="formbold-mb-5">
+                <label for="type" class="formbold-form-label"> Type of Transfer *</label>
+                <select class="formbold-form-input" name="Type" id="type">
+                    <option value="male">Internal</option>
+                    <option value="female">Domestic</option>
+                    <option value="others">International</option>
+                </select>
+            </div>
+            <div class="flex flex-wrap formbold--mx-3">
+                <div class="w-full sm:w-half formbold-px-3">
+                    <div class="formbold-mb-5 w-full">
+                        <label for="date" class="formbold-form-label"> Transfer Date *</label>
+                        <input type="date"
+                               name="Date"
+                               min="2023-05-30"
+                               id="date"
+                               class="formbold-form-input" />
+                    </div>
+                </div>
+                <div class="w-full sm:w-half formbold-px-3">
+                    <div class="formbold-mb-5">
+                        <label for="time" class="formbold-form-label"> Transfer Time *</label>
+                        <input type="time"
+                               name="Time"
+                               id="time"
+                               class="formbold-form-input" />
                     </div>
                 </div>
             </div>
-            <section class="overlay"></section>
-            <!--footer section end -->
-            <!--copyright section start -->
-            <div class="copyright_section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <p class="copyright_text">2020 All Rights Reserved Design by <a href="https://html.design/"> Free Html Templates</p>
-                        </div>
-                    </div>
+            <div class="formbold-btn">
+                <a id="submit">Transfer!</a>
+            </div>
+        </form>
+    </div>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", Arial, Helvetica, sans-serif;
+        }
+
+        .formbold-mb-5 {
+            margin-bottom: 20px;
+        }
+
+        .formbold-pt-3 {
+            padding-top: 12px;
+        }
+
+        .formbold-main-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 48px;
+        }
+
+        .formbold-form-wrapper {
+            margin: 0 auto;
+            max-width: 550px;
+            width: 100%;
+            background: white;
+        }
+
+        .formbold-form-label {
+            display: block;
+            font-weight: 500;
+            font-size: 16px;
+            color: #07074d;
+            margin-bottom: 12px;
+        }
+
+        .formbold-form-label-2 {
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .formbold-form-input {
+            width: 100%;
+            padding: 12px 24px;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+            background: white;
+            font-weight: 500;
+            font-size: 16px;
+            color: #6b7280;
+            outline: none;
+            resize: none;
+        }
+
+            .formbold-form-input:focus {
+                border-color: #6a64f1;
+                box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+            }
+
+        .formbold-btn {
+            text-align: center;
+            font-size: 16px;
+            border-radius: 6px;
+            padding: 14px 32px;
+            border: none;
+            font-weight: 600;
+            background-color: #6a64f1;
+            color: white;
+            width: 100%;
+            cursor: pointer;
+        }
+
+            .formbold-btn:hover {
+                box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+            }
+
+        .formbold--mx-3 {
+            margin-left: -12px;
+            margin-right: -12px;
+        }
+
+        .formbold-px-3 {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .w-full {
+            width: 100%;
+        }
+
+        @media (min-width: 540px) {
+            .sm\:w-half {
+                width: 50%;
+            }
+        }
+    </style>
+    <!--footer section start -->
+    <div class="footer_section layout_padding">
+        <div class="container">
+            <div class="social_icon">
+                <ul>
+                    <address style="color: white;">
+                        Phone: <a href="tel:+1234567890">+1 (234) 567-890</a><br>
+                        Email: <a href="mailto:info@example.com">info@example.com</a><br>
+                        Address: 123 Main St., Anytown USA 12345
+                    </address>
+                    <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                    <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                    <li><a href="#"><img src="images/linkdin-icon.png"></a></li>
+                    <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+                    <li><a href="#"><img src="images/youtub-icon.png"></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--footer section end -->
+    <!--copyright section start -->
+    <div class="copyright_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="copyright_text">2020 All Rights Reserved Design by <a href="https://html.design/"> Free Html Templates</p>
                 </div>
             </div>
-            <!--copyright section end -->
-            <!-- Javascript files-->
-            <script src="js/jquery.min.js"></script>
-            <script src="js/popper.min.js"></script>
-            <script src="js/bootstrap.bundle.min.js"></script>
-            <script src="js/jquery-3.0.0.min.js"></script>
-            <script src="js/plugin.js"></script>
-            <script>
-                // create a submit button element
-                var submitButton = document.getElementById("submit");
+        </div>
+    </div>
+    <!--copyright section end -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script>
+        // create a submit button element
+        var submitButton = document.getElementById("submit");
+        alert("Please fill in all required fields!");
+        // set the type attribute to "submit"
+        submitButton.setAttribute("type", "submit");
+        // set the value attribute to "Submit"
+        submitButton.setAttribute("value", "Submit");
+        // append the submit button to the form element
+
+        // create a function that validates the user input
+        function validateForm() {
+            // get the user input from the text boxes
+            var from = document.querySelector("input[name=From]").value;
+            var to = document.querySelector("input[name=To]").value;
+            var amount = document.querySelector("input[name=Amount]").value;
+            var element = document.getElementById("type");
+            var type = element.options[element.selectedIndex].text;
+            var date = document.querySelector("input[name=Date]").value;
+            var time = document.querySelector("input[name=Time]").value;
+
+            sessionStorage.setItem("from", from);
+            sessionStorage.setItem("to", to);
+            sessionStorage.setItem("amount", amount);
+            sessionStorage.setItem("type", type);
+            sessionStorage.setItem("date", date);
+            sessionStorage.setItem("time", time);
+
+            // check if the name and course are not empty
+            if (from && to && amount && type && date && time) {
+                if (amount < 200) {
+                    alert("Please enter an amount greater than EGP 200");
+                } else if (amount > 100000) {
+                    alert("Insufficient funds");
+                } else {
+                    alert("Transaction successful! \nTransaction TRAN234567890 HAS BEEN PROCESSED");
+                    window.location.assign("Client_Home.html");
+                }
+
+
+            } else if (!from && to && amount && type && date && time) {
+                alert("Please enter account to transfer from! ")
+            } else if (from && !to && amount && type && date && time) {
+                alert("Please enter account to transfer to! ")
+            } else if (from && to && !amount && type && date && time) {
+                alert("Please enter amount to transfer! ")
+            } else if (from && to && amount && type && !date && time) {
+                alert("Please enter date to transfer! ")
+            } else if (from && to && amount && type && date && !time) {
+                alert("Please enter time to transfer! ")
+            }
+            else {
                 alert("Please fill in all required fields!");
-                // set the type attribute to "submit"
-                submitButton.setAttribute("type", "submit");
-                // set the value attribute to "Submit"
-                submitButton.setAttribute("value", "Submit");
-                // append the submit button to the form element
+            }
+            // prevent the form from submitting
+            return false;
+        }
 
-                // create a function that validates the user input
-                function validateForm() {
-                    // get the user input from the text boxes
-                    var from = document.querySelector("input[name=From]").value;
-                    var to = document.querySelector("input[name=To]").value;
-                    var amount = document.querySelector("input[name=Amount]").value;
-                    var element = document.getElementById("type");
-                    var type = element.options[element.selectedIndex].text;
-                    var date = document.querySelector("input[name=Date]").value;
-                    var time = document.querySelector("input[name=Time]").value;
-
-                    sessionStorage.setItem("from", from);
-                    sessionStorage.setItem("to", to);
-                    sessionStorage.setItem("amount", amount);
-                    sessionStorage.setItem("type", type);
-                    sessionStorage.setItem("date", date);
-                    sessionStorage.setItem("time", time);
-
-                    // check if the name and course are not empty
-                    if (from && to && amount && type && date && time) {
-                        if (amount < 200) {
-                            alert("Please enter an amount greater than EGP 200");
-                        } else if (amount > 100000) {
-                            alert("Insufficient funds");
-                        } else {
-                            alert("Transaction successful! \nTransaction TRAN234567890 HAS BEEN PROCESSED");
-                            window.location.assign("Client_Home.html");
-                        }
-
-
-                    } else if (!from && to && amount && type && date && time) {
-                        alert("Please enter account to transfer from! ")
-                    } else if (from && !to && amount && type && date && time) {
-                        alert("Please enter account to transfer to! ")
-                    } else if (from && to && !amount && type && date && time) {
-                        alert("Please enter amount to transfer! ")
-                    } else if (from && to && amount && type && !date && time) {
-                        alert("Please enter date to transfer! ")
-                    } else if (from && to && amount && type && date && !time) {
-                        alert("Please enter time to transfer! ")
-                    }
-                    else {
-                        alert("Please fill in all required fields!");
-                    }
-                    // prevent the form from submitting
-                    return false;
-                }
-
-                // add an event listener to the submit button that calls the validateForm function
-                submitButton.addEventListener("click", validateForm);
-            </script>
-            <!-- sidebar -->
-            <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-            <script src="js/custom.js"></script>
-            <!-- javascript -->
-            <script src="js/owl.carousel.js"></script>
-            <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-            <script>
-                $(document).ready(function () {
-                    $(".fancybox").fancybox({
-                        openEffect: "none",
-                        closeEffect: "none"
-                    });
-            </script>
+        // add an event listener to the submit button that calls the validateForm function
+        submitButton.addEventListener("click", validateForm);
+    </script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- javascript -->
+    <script src="js/owl.carousel.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".fancybox").fancybox({
+                openEffect: "none",
+                closeEffect: "none"
+            });
+    </script>
 </body>
 </html>
 

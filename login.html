@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 <!-- site metas -->
-<title>Contact</title>
+<title>Login</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">	
@@ -79,10 +79,10 @@
                         <div class="mail_section">
                             <input type="Name" class="mail_text" placeholder="Username" name="Username">
                             <input type="Name" class="mail_text" placeholder="Password" name="Password">
-                            <div class="send_bt">
-                                <div class="send_text"><a id="login">LOGIN</a></div>
-                            </div>
                         </div>
+                    </div>
+                    <div class="send_bt" style="cursor: pointer">
+                        <div class="read_text_2" style="color: white"><a id="login">LOGIN</a></div>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -97,16 +97,22 @@
         <div class="container">
             <div class="social_icon">
                 <ul>
+                    <address style="color: white;">
+                        Phone: <a href="tel:+1234567890">+1 (234) 567-890</a><br>
+                        Email: <a href="mailto:info@example.com">info@example.com</a><br>
+                        Address: 123 Main St., Anytown USA 12345
+                    </address>
                     <li><a href="#"><img src="images/fb-icon.png"></a></li>
                     <li><a href="#"><img src="images/twitter-icon.png"></a></li>
                     <li><a href="#"><img src="images/linkdin-icon.png"></a></li>
                     <li><a href="#"><img src="images/instagram-icon.png"></a></li>
                     <li><a href="#"><img src="images/youtub-icon.png"></a></li>
+
                 </ul>
             </div>
         </div>
     </div>
-    <!--footer section end -->
+    <!--footer section end -->
     <!--copyright section start -->
     <div class="copyright_section">
         <div class="container">
@@ -141,7 +147,7 @@
             // check if the name and course are not empty
             if (username && password) {
                 if (username == "client" && password == "123") {
-                    window.location.assign("about.html");
+                    window.location.assign("Client_Home.html");
                 }
                 else if ((username == "client" && password != "123") || (username != "client" && password == "123")) {
                     // alert message

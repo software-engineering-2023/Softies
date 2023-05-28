@@ -73,7 +73,7 @@
     <Content Include="clients.html" />
     <Content Include="Client_Home.html" />
     <Content Include="close_account.html" />
-    <Content Include="contact.html" />
+    <Content Include="login.html" />
     <Content Include="css\animate.min.css" />
     <Content Include="css\bootstrap-grid.css" />
     <Content Include="css\bootstrap-grid.min.css" />

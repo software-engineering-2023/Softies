@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>Clients</title>
+    <title>My Bank Transactions</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -79,7 +79,7 @@
 
                             <th scope="col">ID</th>
                             <th scope="col">Details</th>
-                            <th scope="col" >Amount</th>
+                            <th scope="col">Amount</th>
                             <th scope="col"></th>
                             <th scope="col">Status</th>
                         </tr>
@@ -163,17 +163,22 @@
         <div class="container">
             <div class="social_icon">
                 <ul>
+                    <address style="color: white;">
+                        Phone: <a href="tel:+1234567890">+1 (234) 567-890</a><br>
+                        Email: <a href="mailto:info@example.com">info@example.com</a><br>
+                        Address: 123 Main St., Anytown USA 12345
+                    </address>
                     <li><a href="#"><img src="images/fb-icon.png"></a></li>
                     <li><a href="#"><img src="images/twitter-icon.png"></a></li>
                     <li><a href="#"><img src="images/linkdin-icon.png"></a></li>
                     <li><a href="#"><img src="images/instagram-icon.png"></a></li>
                     <li><a href="#"><img src="images/youtub-icon.png"></a></li>
+
                 </ul>
             </div>
         </div>
     </div>
-    <section class="overlay"></section>
-    <!--footer section end -->
+    <!--footer section end -->
     <!--copyright section start -->
     <div class="copyright_section">
         <div class="container">
@@ -225,39 +230,39 @@
             document.getElementById("to").innerHTML = to;
             document.getElementById("amount").innerHTML = amount;
 
-            }
-            var from = sessionStorage.getItem("from");
-            var to = sessionStorage.getItem("to");
-            var amount = sessionStorage.getItem("amount");
-            var date = sessionStorage.getItem("date");
-            var time = sessionStorage.getItem("time");
-            var table = document.getElementById("table_body");
-            if (to && date && amount) {
-                var row = table.insertRow(-1);
-                //var tansactionID = row.insertCell(0);
-                //var details = row.insertCell(1);
-                //var amountintable = row.insertCell(2);
-                //var status = row.insertCell(3);
-                row.insertCell(0).innerHTML = "TRAN234567890";
-                row.insertCell(1).innerHTML = to + " " + date;
-                row.insertCell(2).innerHTML = "- EGP " + amount;
-                row.insertCell(3).innerHTML;
-                row.insertCell(4).innerHTML = "Pending";
-            }
+        }
+        var from = sessionStorage.getItem("from");
+        var to = sessionStorage.getItem("to");
+        var amount = sessionStorage.getItem("amount");
+        var date = sessionStorage.getItem("date");
+        var time = sessionStorage.getItem("time");
+        var table = document.getElementById("table_body");
+        if (to && date && amount) {
+            var row = table.insertRow(-1);
+            //var tansactionID = row.insertCell(0);
+            //var details = row.insertCell(1);
+            //var amountintable = row.insertCell(2);
+            //var status = row.insertCell(3);
+            row.insertCell(0).innerHTML = "TRAN234567890";
+            row.insertCell(1).innerHTML = to + " " + date;
+            row.insertCell(2).innerHTML = "- EGP " + amount;
+            row.insertCell(3).innerHTML;
+            row.insertCell(4).innerHTML = "Successful";
+        }
 
             //let newText = document.createTextNode("TRAN234567890");
             //transactionID.appendChild(newText);
             //details.appendChild(document.createTextNode(to + "\n" + date));
             //amount.appendChild(document.createTextNode(amount));
 
-            /*var output = document.getElementById('to');
-            output.innerText = to;
-            var outputAmount = document.getElementById('amount');
-            outputAmount.innerText = "EGP " + amount;
-            var outputDate = document.getElementById('date');
-            outputDate.innerText = date;
-            var outputTime = document.getElementById('time');
-            outputTime.innerText = time;*/
+    /*var output = document.getElementById('to');
+    output.innerText = to;
+    var outputAmount = document.getElementById('amount');
+    outputAmount.innerText = "EGP " + amount;
+    var outputDate = document.getElementById('date');
+    outputDate.innerText = date;
+    var outputTime = document.getElementById('time');
+    outputTime.innerText = time;*/
     </script>
 
 </body>
