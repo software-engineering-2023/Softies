@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>Loan Application</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">	
+<!-- bootstrap css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Responsive-->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- fevicon -->
+<link rel="icon" href="images/fevicon.png" type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!-- owl stylesheets --> 
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+</head>
+<body>
+    <!--header section start -->
+    <div class="header_section">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                
+                <div class="logo"><a href="index.html"><img class = new src="images/logo4.png"> <style>
+                    .new {
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                    }
+                  </style></a></div>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">WEB</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">ELEMENTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="images/search-icon.png"></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--header section end -->
+
+    <head>
+        <title>Pay Your Bills</title>
+        <style>
+        /* Internal CSS style */
+        h1 {
+        font-family: Arial, sans-serif;
+        font-size: 36px;
+        color: darkviolet;
+        text-align: center;
+        }
+        
+        table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: 20px auto;
+        }
+        
+        th, td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: left;
+        }
+        
+        tr:nth-child(even) {
+        background-color: lightgrey;
+        }
+        
+        input[type=number] {
+        width: 100px;
+        }
+        
+        input[type=submit] {
+        display: block;
+        margin: 20px auto;
+        }
+        </style>
+        </head>
+        <body>
+        <h1>Pay Your Bills</h1>
+        <form action="payBills.html" method="post">
+        <table>
+        <tr>
+        <th>Select</th>
+        <th>Bill Name</th>
+        <th>Due Date</th>
+        <th>Amount Due</th>
+        <th>Amount to Pay</th>
+        </tr>
+        <tr>
+        <td><input type="radio" name="bill" value="electricity"></td>
+        <td>Electricity Bill</td>
+        <td>01/01/2022</td>
+        <td id="electricityDue">EGP100</td>
+        <td><input type="number" name="electricity" id="electricityPay" min="0" max="100"></td>
+        </tr>
+        <tr>
+        <td><input type="radio" name="bill" value="water"></td>
+        <td>Water Bill</td>
+        <td>01/02/2022</td>
+        <td id="waterDue">EGP50</td>
+        <td><input type="number" name="water" id="waterPay" min="0" max="50"></td>
+        </tr>
+        <tr>
+        <td><input type="radio" name="bill" value="internet"></td>
+        <td>Internet Bill</td>
+        <td>01/03/2022</td>
+        <td id="internetDue">EGP75</td>
+        <td><input type="number" name="internet" id="internetPay" min="0" max="75"></td>
+        </tr>
+       
+        </table>
+        <!-- Add a hidden input to store the selected bill value -->
+        <input type="hidden" name="selectedBill" id="selectedBill">
+        <!-- Add an event listener to the submit button to call a function before submitting -->
+        <input type="submit" value="Pay" onclick="payBill()" style="background-color: darkviolet; color: white; border-radius: 20px; font-size: 30px; padding: 20px;">
+       <!-- <input type="button" value="Reset" onclick="resetBills()">-->
+        </form>
+       
+        <!-- Add a script tag to write the JavaScript code -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!--footer section start -->
+     <div class="footer_section layout_padding">
+        <div class="container">
+            <div class="social_icon">
+                <ul>
+                    <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                    <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                    <li><a href="#"><img src="images/linkdin-icon.png"></a></li>
+                    <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+                    <li><a href="#"><img src="images/youtub-icon.png"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--footer section end -->
+    <!--copyright section start -->
+    <div class="copyright_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="copyright_text">2020 All Rights Reserved Design by <a href="https://html.design/"> Free Html Templates</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--copyright section end -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script>
+        // Define a function to pay the bill and show a message
+        function payBill() {
+       
+       // Get the selected bill value from the radio buttons
+        let bill = document.querySelector('input[name=bill]:checked').value;
+       
+       // Store the selected bill value in the hidden input
+        document.getElementById('selectedBill').value = bill;
+       
+       // Declare variables for the amount due and the amount to pay elements
+        let dueElement, payElement;
+       
+       // Use a switch statement to assign the variables based on the bill value
+        switch (bill) {
+        case 'electricity':
+        dueElement = document.getElementById('electricityDue');
+        payElement = document.getElementById('electricityPay');
+        break;
+        case 'water':
+        dueElement = document.getElementById('waterDue');
+        payElement = document.getElementById('waterPay');
+        break;
+        case 'internet':
+        dueElement = document.getElementById('internetDue');
+        payElement = document.getElementById('internetPay');
+        break;
+       }
+       
+       // Get the amount due and the amount to pay values as numbers
+       let due = Number(dueElement.textContent.slice(3));
+       let pay = Number(payElement.value);
+       
+       // Check if the amount to pay is valid (not negative or greater than the amount due)
+       if (pay >= 0 && pay <= due) {
+       
+        // Subtract the amount to pay from the amount due and update the element
+        due -= pay;
+        // Show an alert message with the bill name and the amount paid
+        alert('You have paid EGP' + pay + ' for your ' + bill + ' bill.');
+        dueElement.textContent = 'EGP' + due;
+       
+        // Reset the amount to pay input value
+        payElement.value = '';
+       
+        // Store the new amount due in local storage with the bill name as the key
+        localStorage.setItem(bill, due);
+       
+       } else {
+       
+        // Show an alert message with an error
+        alert('Invalid amount to pay. Please enter a number between 0 and ' + due + '.');
+       
+        // Prevent the form from submitting
+        return false;
+       
+       }
+       
+       }
+       
+       // Define a function to load the data from local storage when the page loads
+       function loadData() {
+       
+         // Get all the radio buttons with the name of "bill"
+         let bills = document.querySelectorAll('input[name=bill]');
+       
+         // Loop through each radio button
+         for (let bill of bills) {
+       
+           // Get the bill value from the radio button
+           let billValue = bill.value;
+       
+           // Get the amount due element that corresponds to the bill value
+           let dueElement = document.getElementById(billValue + 'Due');
+       
+           // Get the data from local storage with the bill value as the key
+           let due = localStorage.getItem(billValue);
+           
+           // If there is data in local storage, update the amount due element with the data
+           if (due) {
+             dueElement.textContent = 'EGP' + due;
+           }
+       
+         }
+       
+       }
+       
+       // Call the loadData function when the page loads
+       window.onload = loadData;
+   /*   // Define a function to reset the bills amount when the reset button is clicked
+function resetBills() {
+
+// Get all the radio buttons with the name of "bill"
+let bills = document.querySelectorAll('input[name=bill]');
+
+// Loop through each radio button
+for (let bill of bills) {
+
+  // Get the bill value from the radio button
+  let billValue = bill.value;
+
+  // Get the amount due element that corresponds to the bill value
+  let dueElement = document.getElementById(billValue + 'Due');
+
+  // Declare a variable for the original amount due based on the bill value
+  let originalDue;
+
+  // Use a switch statement to assign the variable based on the bill value
+  switch (billValue) {
+    case 'electricity':
+      originalDue = 100;
+      break;
+    case 'water':
+      originalDue = 50;
+      break;
+    case 'internet':
+      originalDue = 75;
+      break;
+  }
+
+  // Update the amount due element with the original amount due
+  dueElement.textContent = 'EGP' + originalDue;
+
+  // Remove the data from local storage with the bill value as the key
+  localStorage.removeItem(billValue);
+
+}
+
+}*/
+
+       
+       </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- javascript -->
+    <script src="js/owl.carousel.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".fancybox").fancybox({
+                openEffect: "none",
+                closeEffect: "none"
+            })});
+    </script>
+</body>
+</html>
