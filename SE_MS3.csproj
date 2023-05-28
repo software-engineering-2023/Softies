@@ -68,7 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="about.html" />
+    <Content Include="adminHomePage.html" />
     <Content Include="banker.html" />
+    <Content Include="bankersClient.html" />
+    <Content Include="ccApplications.html" />
+    <Content Include="clientAccounts.html" />
     <Content Include="clients.html" />
     <Content Include="contact.html" />
     <Content Include="css\animate.min.css" />
@@ -121,6 +125,9 @@
     <Content Include="js\plugin.js" />
     <Content Include="js\popper.min.js" />
     <Content Include="js\slider-setting.js" />
+    <Content Include="loanApplications.html" />
+    <Content Include="reviewCCIssues.html" />
+    <Content Include="reviewTechIssues.html" />
     <Content Include="services.html" />
     <Content Include="Web.config" />
   </ItemGroup>
