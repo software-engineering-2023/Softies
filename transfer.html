@@ -36,29 +36,26 @@
     <div class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="logo"><a href="index.html"><img src="images/logo4.png"></a></div>
+                <div class="logo"><a href="Client_Home.html"><img src="images/logo4.png"></a></div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">HOME</a>
+                            <a class="nav-link" href="Client_Home.html">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">ABOUT</a>
+                            <a class="nav-link" href="Bank_Transactions.html">TRANSACTIONS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="services.html">SERVICES</a>
+                            <a class="nav-link" href="transfer.html">TRANSFER</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">WEB</a>
+                            <a class="nav-link" href="index.html">CREDIT CARD</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">ELEMENTS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">CONTACT US</a>
+                            <a class="nav-link" href="Technical_Issue_Page.html">REPORT</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><img src="images/search-icon.png"></a>
@@ -73,34 +70,33 @@
         <!-- Author: FormBold Team -->
         <!-- Learn More: https://formbold.com -->
         <div class="formbold-form-wrapper">
-            <form action="Client_Home.html">
                 <div class="formbold-mb-5">
-                    <label for="name" class="formbold-form-label"> From Account *</label>
+                    <label for="from" class="formbold-form-label"> From Account *</label>
                     <input type="text"
-                           name="from"
-                           id="name"
+                           name="From"
+                           id="from"
                            placeholder="Please enter account number..."
                            class="formbold-form-input" />
                 </div>
                 <div class="formbold-mb-5">
-                    <label for="phone" class="formbold-form-label"> To Account *</label>
+                    <label for="to" class="formbold-form-label"> To Account *</label>
                     <input type="text"
-                           name="to"
-                           id="phone"
+                           name="To"
+                           id="to"
                            placeholder="Please enter destination account number..."
                            class="formbold-form-input" />
                 </div>
                 <div class="formbold-mb-5">
-                    <label for="phone" class="formbold-form-label"> Amount *</label>
-                    <input type="text"
-                           name="amount"
-                           id="phone"
+                    <label for="amount" class="formbold-form-label"> Amount (EGP) *</label>
+                    <input type="number"
+                           name="Amount"
+                           id="amount"
                            placeholder="Please enter amount to be transfered..."
                            class="formbold-form-input" />
                 </div>
                 <div class="formbold-mb-5">
-                    <label for="email" class="formbold-form-label"> Type of Transfer *</label>
-                    <select class="formbold-form-input" name="type" id="occupation">
+                    <label for="type" class="formbold-form-label"> Type of Transfer *</label>
+                    <select class="formbold-form-input" name="Type" id="type">
                         <option value="male">Internal</option>
                         <option value="female">Domestic</option>
                         <option value="others">International</option>
@@ -111,7 +107,7 @@
                         <div class="formbold-mb-5 w-full">
                             <label for="date" class="formbold-form-label"> Transfer Date *</label>
                             <input type="date"
-                                   name="date"
+                                   name="Date"
                                    id="date"
                                    class="formbold-form-input" />
                         </div>
@@ -120,19 +116,15 @@
                         <div class="formbold-mb-5">
                             <label for="time" class="formbold-form-label"> Transfer Time *</label>
                             <input type="time"
-                                   name="time"
+                                   name="Time"
                                    id="time"
                                    class="formbold-form-input" />
                         </div>
                     </div>
                 </div>
-                <div>
-                    <button class="formbold-btn" id="submit" href="Client_Home.html">Transfer!</button>
+                <div class="formbold-btn">
+                    <a id="submit">Transfer!</a>
                 </div>
-                <div>
-                    <button class="formbold-btn" id="home" href="Client_Home.html">Back to Home Page</button>
-                </div>
-            </form>
         </div>
     </div>
     <style>
@@ -281,6 +273,7 @@
     <script>
         // create a submit button element
         var submitButton = document.getElementById("submit");
+        alert("Please fill in all required fields!");
         // set the type attribute to "submit"
         submitButton.setAttribute("type", "submit");
         // set the value attribute to "Submit"
@@ -290,19 +283,25 @@
         // create a function that validates the user input
         function validateForm() {
             // get the user input from the text boxes
-            var from = document.querySelector("input[name=from]").value;
-            var to = document.querySelector("textarea[name=to]").value;
-            var amount = document.querySelector("input[name=amount]").value;
-            var type = document.querySelector("textarea[name=type]").value;
-            var date = document.querySelector("input[name=date]").value;
-            var time = document.querySelector("textarea[name=time]").value;
-            // check if the subject and element are not empty
+            var from = document.querySelector("input[name=From]").value;
+            var to = document.querySelector("input[name=To]").value;
+            var amount = document.querySelector("input[name=Amount]").value;
+            var element = document.getElementById("type");
+            var type = element.options[element.selectedIndex].text;
+            var date = document.querySelector("input[name=Date]").value;
+            var time = document.querySelector("input[name=Time]").value;
+
+            // check if the name and course are not empty
             if (from && to && amount && type && date && time) {
-                // alert an message
-                alert("Transaction Processed! \n Transaction ASGD25478379 was processed.");
-            } else
-                // alert an error message
-                alert("Please fill in all required fields. Required fields are indicated with an "*"");
+                
+                alert("Transaction successful! \n Transaction TRAN234567890 HAS BEEN PROCESSED");
+                window.location.assign("Client_Home.html");
+                
+            }else if (!from && to && amount && type && date && time) {
+                alert("Please enter account to transfer from! ")
+            }
+            else{
+                alert("Please fill in all required fields!");
             }
             // prevent the form from submitting
             return false;
@@ -325,6 +324,22 @@
                 closeEffect: "none"
             });
     </script>
+    <script>
+        function saveTransfer(event) {
+            event.preventDefault();
+            var transfer = {
+                from: document.getElementById("from").value,
+                to: document.getElementById("to").value,
+                amount: document.getElementById("amount").value
+                date: document.getElementById("date").value
+                time: document.getElementById("time").value
+                type: document.getElementById("type").value
+            };
+            localStorage.setItem("transfer", JSON.stringify(transfer));
+            window.location.href = "transfers.html";
+        }
+    </script>
 
 </body>
 </html>
+

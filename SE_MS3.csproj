@@ -72,6 +72,7 @@
     <Content Include="Bank_Transactions.html" />
     <Content Include="clients.html" />
     <Content Include="Client_Home.html" />
+    <Content Include="close_account.html" />
     <Content Include="contact.html" />
     <Content Include="css\animate.min.css" />
     <Content Include="css\bootstrap-grid.css" />
@@ -94,6 +95,7 @@
     <Content Include="css\slick.css" />
     <Content Include="css\style.css" />
     <Content Include="images\about-bg.png" />
+    <Content Include="images\bank-safe.png" />
     <Content Include="images\banner-bg.png" />
     <Content Include="images\bg-main.png" />
     <Content Include="images\card-missing.png" />
@@ -136,6 +138,7 @@
     <Content Include="js\plugin.js" />
     <Content Include="js\popper.min.js" />
     <Content Include="js\slider-setting.js" />
+    <Content Include="open_account.html" />
     <Content Include="services.html" />
     <Content Include="Technical_Issue_Page.html" />
     <Content Include="transfer.html" />

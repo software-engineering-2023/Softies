@@ -66,38 +66,52 @@
         </div>
     </div>
     <!--header section end -->
-    <!--contact section start -->
-    <div class="contact_section layout_padding">
+    <!--about section start -->
+    <div class="about_section layout_padding">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1 class="contact_text">Report Credit Card Issue</h1>
-                    <div class="contact_main">
-                        <div class="mail_section">
-                            <input type="Name" class="mail_text" placeholder="Enter Credit Card Number *" name="subject">
-                            <select name="type" id="select">
-                                <option value="default">Select Type of Issue</option>
-                                <option value="CCT">Credit Card Theft</option>
-                                <option value="CCD">Credit Card Damage</option>
-                                <option value="CCL">Credit Card Loss</option>
-                            </select>
-                            <textarea class="massage_text" placeholder="Enter any additional information you wish to report here..." rows="5" id="comment" name="text"></textarea>
-                            <div style ="color:white" class="replacement">
-                                <input  type="checkbox" name="terms" id="terms"  onchange="activateButton(this)" >  I want a replacement
-                            </div>
-                            <div class="send_bt">
-                                <div class="send_text"><a id="submit">Submit</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="contact_bg"><img src="images/contact-bg.png"></div>
-                </div>
+            <h1 class="about_text">Close an Account</h1>
+            <p class="lorem_text">Close any of your bank accounts without the hassle of going to the bank!</p>
+            <p class="lorem_text">A banker will contact you to let you know your next steps.</p>
+            <div class="about_bg"><img src="images/about-bg.png"></div>
+            <div class="formbold-mb-5">
+                <label for="type" class="formbold-form-label"> Choose an Account *</label>
+                <select class="formbold-form-input" name="account" id="account">
+                    <option value="male">CHECKINGEG88992222254578</option>
+                    <option value="female">SAVINGSEG78895632147896</option>
+                </select>
+            </div>
+            <div class="read_bt_main">
+                <div class="read_text_2" style="color: white"><a id="submit">Request to Close Account</a></div>
             </div>
         </div>
     </div>
-    <!--contact section end -->
+    <style>
+        .formbold-mb-5 {
+            margin-bottom: 20px;
+        }
+
+        .formbold-form-label {
+            display: block;
+            font-weight: 500;
+            font-size: 16px;
+            color: #07074d;
+            margin-bottom: 12px;
+        }
+
+        .formbold-form-input {
+            width: 100%;
+            padding: 12px 24px;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+            background: white;
+            font-weight: 500;
+            font-size: 16px;
+            color: #6b7280;
+            outline: none;
+            resize: none;
+        }
+    </style>
+    <!--about section end -->
     <!--footer section start -->
     <div class="footer_section layout_padding">
         <div class="container">
@@ -141,49 +155,12 @@
 
         // create a function that validates the user input
         function validateForm() {
-            // get the user input from the text boxes
-            var subject = document.querySelector("input[name=subject]").value;
-            var element = document.getElementById("select");
-            var value = element.value;
-            var text = element.options[element.selectedIndex].text;
-            var message = document.querySelector("textarea[name=text]").value;
-            // check if the subject and element are not empty
-            if (subject && text != "Select Type of Issue") {
-                // alert an error message
-                alert("Issue report submitted successfully!");
-
-            } else if (subject && text == "Select Type of Issue") {
-                // alert an error message
-                alert("Please select the type of issue you wish to report!");
-            } else if (!subject && text != "Select Type of Issue") {
-                // alert an error message
-                alert("Please enter your credit card number!");
-            } else {
-                // alert an error message
-                alert("Please fill the required fields!");
-            }
-            // prevent the form from submitting
-            return false;
+            alert("Request submitted successfully!");
+            window.location.assign("Client_Home.html");
         }
 
         // add an event listener to the submit button that calls the validateForm function
         submitButton.addEventListener("click", validateForm);
-    </script>
-    <script>
-        function disableSubmit() {
-            document.getElementById("submit").disabled = true;
-        }
-
-        function activateButton(element) {
-
-            if (element.checked) {
-                document.getElementById("submit").disabled = false;
-            }
-            else {
-                document.getElementById("submit").disabled = true;
-            }
-
-        }
     </script>
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
