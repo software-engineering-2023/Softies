@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 <!-- site metas -->
-<title>Loan Application</title>
+<title>Pay Bills</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">	
@@ -36,7 +36,6 @@
     <div class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                
                 <div class="logo"><a href="index.html"><img class = new src="images/logo4.png"> <style>
                     .new {
                       position: absolute;
@@ -44,29 +43,25 @@
                       left: 0;
                     }
                   </style></a></div>
-                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">HOME</a>
+                            <a class="nav-link" href="Client_Home.html">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">ABOUT</a>
+                            <a class="nav-link" href="Bank_Transactions.html">TRANSACTIONS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="services.html">SERVICES</a>
+                            <a class="nav-link" href="transfer.html">TRANSFER</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">WEB</a>
+                            <a class="nav-link" href="index.html">CREDIT CARD</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">ELEMENTS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">CONTACT</a>
+                            <a class="nav-link" href="Technical_Issue_Page.html">REPORT</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><img src="images/search-icon.png"></a>
@@ -152,7 +147,7 @@
         <!-- Add a hidden input to store the selected bill value -->
         <input type="hidden" name="selectedBill" id="selectedBill">
         <!-- Add an event listener to the submit button to call a function before submitting -->
-        <input type="submit" value="Pay" onclick="payBill()" style="background-color: darkviolet; color: white; border-radius: 20px; font-size: 30px; padding: 20px;">
+        <input type="submit" value="Pay" onclick="payBill()" style="background-color: darkviolet; color: white; border-radius: 20px; font-size: 30px; padding: 20px; cursor:pointer">
        <!-- <input type="button" value="Reset" onclick="resetBills()">-->
         </form>
        
@@ -181,11 +176,17 @@
         <div class="container">
             <div class="social_icon">
                 <ul>
+                    <address style="color: white;">
+                        Phone: <a href="tel:+1234567890">+1 (234) 567-890</a><br>
+                        Email: <a href="mailto:info@example.com">info@example.com</a><br>
+                        Address: 123 Main St., Anytown USA 12345
+                      </address>
                     <li><a href="#"><img src="images/fb-icon.png"></a></li>
                     <li><a href="#"><img src="images/twitter-icon.png"></a></li>
                     <li><a href="#"><img src="images/linkdin-icon.png"></a></li>
                     <li><a href="#"><img src="images/instagram-icon.png"></a></li>
                     <li><a href="#"><img src="images/youtub-icon.png"></a></li>
+                    
                 </ul>
             </div>
         </div>
