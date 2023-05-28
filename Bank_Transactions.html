@@ -223,7 +223,7 @@
         function loadTransfer() {
             var transfer = JSON.parse(localStorage.getItem("transfer"));
             document.getElementById("date").innerHTML = transfer.date;
-            document.getElementById("date").innerHTML = transfer.time;
+            document.getElementById("time").innerHTML = transfer.time;
             document.getElementById("to").innerHTML = transfer.to;
             document.getElementById("amount").innerHTML = transfer.amount;
         }
