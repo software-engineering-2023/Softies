@@ -307,12 +307,26 @@
 
                     // check if the name and course are not empty
                     if (from && to && amount && type && date && time) {
+                        if (amount < 200) {
+                            alert("Please enter an amount greater than EGP 200");
+                        } else if (amount > 100000) {
+                            alert("Insufficient funds");
+                        } else {
+                            alert("Transaction successful! \nTransaction TRAN234567890 HAS BEEN PROCESSED");
+                            window.location.assign("Client_Home.html");
+                        }
 
-                        alert("Transaction successful! \n Transaction TRAN234567890 HAS BEEN PROCESSED");
-                        window.location.assign("Client_Home.html");
 
                     } else if (!from && to && amount && type && date && time) {
                         alert("Please enter account to transfer from! ")
+                    } else if (from && !to && amount && type && date && time) {
+                        alert("Please enter account to transfer to! ")
+                    } else if (from && to && !amount && type && date && time) {
+                        alert("Please enter amount to transfer! ")
+                    } else if (from && to && amount && type && !date && time) {
+                        alert("Please enter date to transfer! ")
+                    } else if (from && to && amount && type && date && !time) {
+                        alert("Please enter time to transfer! ")
                     }
                     else {
                         alert("Please fill in all required fields!");
