@@ -79,33 +79,62 @@
 
     <head>
         <title>Redeem Credit Card Points</title>
-      </head>
-      <body>
+        
+        <style>
+        .grey-box {
+          border: 2px solid black;
+          padding: 20px;
+          margin: 40px;
+          background-color: lightgrey;
+        }
+       
+        h1 {
+          font-family: Arial, sans-serif;
+          font-size: 36px;
+          margin: 40px;
+          color: black;
+        }
+       
+        p {
+          font-family: Verdana, sans-serif;
+          font-size: 18px;
+          margin: 40px;
+          color: black;
+        }
+       
+        form {
+          opacity: 0.8;
+          margin: 40px;
+        }
+        </style>
+       </head>
+       <body>
         <h1>Redeem Your Credit Card Reward Points</h1>
-        <p>You have earned <span id="points">1000</span> points on your credit card. You can redeem them for various rewards, such as gift cards, airfare, statement credits, or donations.</p>
-        <form action="redeem.php" method="post">
-          <label for="reward">Select a reward option:</label>
-          <select id="reward" name="reward">
-            <option value="giftcard">Gift Card</option>
-            <option value="airfare">Airfare</option>
-            <option value="statement">Statement Credit</option>
-            <option value="donation">Donation</option>
-          </select>
-          <input type="submit" value="Redeem">
-        </form>
-      </body>
-      </html>
+        <p>You have earned <span id="points">10000</span> points on your credit card. You can redeem them for various rewards, such as gift cards, airfare, statement credits, or donations.</p>
+        
+        <div class="grey-box">
+            <form action="redeemPts.html" method="post">
+                <label for="reward">Select a reward option:</label>
+                <select id="reward" name="reward">
+                <option value="giftcard">Gift Card</option>
+                <option value="airfare">Airfare</option>
+                <option value="statement">Statement Credit</option>
+                <option value="donation">Donation</option>
+                </select>
+                <label for="amount">Enter the amount of points to redeem:</label>
+                <input id="amount" name="amount" type="number" min="0" max="1000">
+                
+                <input id="submit" type="submit" value="Redeem">
+                
+               </form>
+              <!-- <button id="reset" type="button">Reset Points</button>-->
+              
+        </div>
+        
 
-
-
-
-
-
-
-
-
-
-
+        
+       </body>
+       </html>
 
 
 
@@ -147,14 +176,51 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/plugin.js"></script>
+
     <script>
         
+        var amount = document.getElementById("amount");
+var points = document.getElementById("points");
+var submit = document.getElementById("submit");
+var reset = document.getElementById("reset");
 
+// Get the initial points value from localStorage or set it to 1000 if not found
+var initialPoints = localStorage.getItem("points") || 1000;
 
+// Update the span element with the initial points value
+points.textContent = initialPoints;
 
+// Add an event listener to the submit button
+submit.addEventListener("click", function() {
+  // Get the input value and the current points value
+  var input = parseInt(amount.value);
+  var current = parseInt(points.textContent);
 
+  // Check if the input is valid and within the range
+  if (input > 0 && input <= current) {
+    // Deduct the input value from the current points value
+    var newPoints = current - input;
+    alert("Congartulations, points reddemed successfully ");
 
+    // Update the span element with the new points value
+       points.textContent = newPoints;
 
+    // Store the new points value in localStorage
+       localStorage.setItem("points", newPoints);
+  }
+  if (input > 0 && input >current){
+    alert("Amount requested greater than available!. Please choose a proper amount.");
+  }
+});
+
+// Add an event listener to the reset button
+   /*reset.addEventListener("click", function() {
+  // Remove the points key from localStorage
+  localStorage.removeItem("points");
+
+    // Update the span element with the default points value
+    points.textContent = 1000;
+    });*/
 
 
 
