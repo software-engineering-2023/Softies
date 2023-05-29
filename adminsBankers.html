@@ -66,25 +66,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="banker.html">HOME</a>
+                            <a class="nav-link" href="adminHomePage.html">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="bankersDetails.html">ACOUNT</a>
+                            <a class="nav-link" href="adminDetails.html">ACOUNT</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="reviewTechIssues.html">ISSUES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Technical_Issues_Page.html">REPORT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="loanApplications.html">LOANS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="ccApplications.html">CARDS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="reviewCCIssues.html">ISSUES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="clientAccounts.html">CLIENTS</a>
+                            <a class="nav-link" href="adminsBankers.html">BANKERS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="login.html">LOGOUT</a>
@@ -101,14 +92,14 @@
     <div class="content">
 
         <div class="container">
-            <h2 class="mb-5">My Clients</h2>
+            <h2 class="mb-5">My Bankers</h2>
 
             <div class="table-responsive">
 
                 <table class="table custom-table">
                     <thead>
                         <tr>
-                            <th scope="col">Client Useraname</th>
+                            <th scope="col">Banker Useraname</th>
                             <th scope="col">Name</th>
                             <th scope="col"> </th>
                         </tr>
@@ -116,37 +107,37 @@
                     <tbody>
                         <tr scope="row">
                             <td>
-                                client
+                                banker
                             </td>
                             <td>
-                                Client
+                                Banker
                             </td>
                             <td>
-                                <input type="submit" value="View Account" onclick="viewClientAccount()" style="background-color: darkviolet; color: White; border-radius: 20px; font-size: 14px;font-weight:bold; padding: 15px; border-color: Black; border-block-width:medium">
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                nevo_is_cute
-                            </td>
-                            <td>
-                                Neveen Yahia Fahmy
-                            </td>
-                            <td>
-                                <input type="submit" value="View Account" onclick="viewClientNevo()" style="background-color: darkviolet; color: White; border-radius: 20px; font-size: 14px;font-weight:bold; padding: 15px; border-color: Black; border-block-width:medium">
+                                <input type="submit" value="View Account" onclick="viewBankerAccount()" style="background-color: darkviolet; color: White; border-radius: 20px; font-size: 14px;font-weight:bold; padding: 15px; border-color: Black; border-block-width:medium">
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                mizo_amar
+                                hayouya
                             </td>
                             <td>
-                                Maryse Maged Samuel
+                                Haya Ahmed ElSarraf
                             </td>
                             <td>
-                                <input type="submit" value="View Account" onclick="viewClientMizo()" style="background-color: darkviolet; color: White; border-radius: 20px; font-size: 14px;font-weight:bold; padding: 15px; border-color: Black; border-block-width:medium">
+                                <input type="submit" value="View Account" onclick="viewBankerHaya()" style="background-color: darkviolet; color: White; border-radius: 20px; font-size: 14px;font-weight:bold; padding: 15px; border-color: Black; border-block-width:medium">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                dizo_is_tired
+                            </td>
+                            <td>
+                                Deema Magdy Barakat
+                            </td>
+                            <td>
+                                <input type="submit" value="View Account" onclick="viewBankerDizo()" style="background-color: darkviolet; color: White; border-radius: 20px; font-size: 14px;font-weight:bold; padding: 15px; border-color: Black; border-block-width:medium">
                             </td>
                         </tr>
 
@@ -194,16 +185,16 @@
 
 
 
-        function viewClientAccount() {
-            window.location.assign("bankersClient.html");
+        function viewBankerAccount() {
+            window.location.assign("bankersDetails.html");
         }
 
-        function viewClientNevo() {
-            window.location.assign("clientNevo.html");
+        function viewBankerHaya() {
+            window.location.assign("bankerHaya.html");
         }
 
-        function viewClientMizo() {
-            window.location.assign("clientMizo.html");
+        function viewBankerDizo() {
+            window.location.assign("bankerDizo.html");
         }
 
 
