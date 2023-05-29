@@ -47,7 +47,7 @@
     <div class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="logo"><a href="Client_Home.html"><img src="images/logo4.png"></a></div>
+                <div class="logo"><a href="Client_Home.html"><img src="images/Banko3.jpg"></a></div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -91,6 +91,8 @@
                     document.querySelector(".balance").innerHTML = balance;
                 }
             </script>
+                  <button type="button"  class="logout-button" onclick="goToLoginPage()" style="position: absolute; bottom: -780px; left: 47%; right: 53%;">Logout</button>  
+
             <div class="service_section_2">
                 <div class="row">
                     <div class="col-sm-12 col-lg-4">
@@ -180,9 +182,41 @@
                     </div>
                 </div>
             </div>
+            
         </div>
+        
     </div>
-    <!--footer section start -->
+    <style>
+        /* Define a custom class for the button */
+        .logout-button {
+          /* Set the background color to blue */
+          background-color: darkviolet;
+          /* Set the text color to white */
+          color: white;
+          /* Set the width and height of the button */
+          width: 100px;
+          height: 50px;
+          /* Set the border to none */
+          border: none;
+          /* Set the border radius to make the button rounder */
+          border-radius: 10px;
+          /* Set the font family and size of the text */
+          font-family: Arial;
+          font-size: 20px;
+        }
+      
+        /* Define a hover effect for the button */
+        .logout-button:hover {
+          /* Change the background color to light blue */
+          background-color: lightslategrey;
+          /* Change the cursor to a pointer */
+          cursor: pointer;
+        }
+      </style>
+      
+      <!-- Use the custom class for the button -->
+      
+        <!--footer section start -->
     <div class="footer_section layout_padding">
         <div class="container">
             <div class="social_icon">
@@ -226,6 +260,14 @@
             var currentBalance = document.getElementById("current_balance");
             currentBalance.innerHTML = "EGP " + (100000 - amount) + ".00";
         }
+
+        
+        // Define a function that redirects to the login page
+        function goToLoginPage() {
+          // Assign the URL of the login page to the window location
+          window.location.href = "login.html";
+        }
+      
     </script>
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
