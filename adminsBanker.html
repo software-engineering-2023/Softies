@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <!-- basic -->
@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>Credit Card Application Details</title>
+    <title>My Details</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -36,38 +36,29 @@
     <div class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="logo"><a href="banker.html"><img src="images/Banko3.jpg"></a></div>
+                <div class="logo"><a href="adminHomePage.html"><img src="images/Banko3.jpg"></a></div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="banker.html">HOME</a>
+                            <a class="nav-link" href="adminHomePage.html">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="bankersDetails.html">ACCOUNT</a>
+                            <a class="nav-link" href="adminDetails.html">ACCOUNT</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="reviewTechIssues.html">ISSUES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Technical_Issue_Page.html">REPORT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="loanApplications.html">LOANS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="ccApplications.html">CARDS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="reviewCCIssues.html">ISSUES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="clientAccounts.html">CLIENTS</a>
+                            <a class="nav-link" href="adminsBankers.html">BANKERS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="login.html">LOGOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="bankerNotification.html"><img src="images/icons8-bell-64.png"></a>
+                            <a class="nav-link" href="adminNotification.html"><img src="images/icons8-bell-64.png"></a>
                         </li>
                     </ul>
                 </div>
@@ -76,19 +67,23 @@
     </div>
     <!--header section end -->
     <!--put work here-->
-    <br />
-    <h1>Credit Card Application</h1>
     <div>
-        <p>Client: client</p>
-        <p>Application ID: 123456</p>
-        <p>Requested Amount: 15,000.00</p>
-        <p>proof of income: </p>
-        <input type="submit" value="accept request" onclick="acceptCCRequest()" style="background-color: white; color: black; cursor: pointer; border-radius: 20px; font-size: 16px; font-weight: bold; padding: 15px; border-color: green; border-block-width: medium">
-        <input type="submit" value="deny request" onclick="denyCCRequest()" style="background-color: white; color: black; cursor: pointer; border-radius: 20px; font-size: 16px; font-weight: bold; padding: 15px; border-color: red; border-block-width: medium ">
+        <h2>Banker</h2>
 
+        <hr>
+        <hr>
+
+        <h3 >personal Info</h3>
+        <div style="font-family: Arial; font-weight: bold; border: 2px solid black; padding: 20px; margin: 10px;">
+            <p><strong>Username: </strong> banker</p>
+            <p><strong>National ID: </strong>12345611234567</p>
+            <p><strong>Date of Birth: </strong>3/5/1998</p>
+            <p><strong>Address: </strong>Sheikh Zayed</p>
+            <p><strong>Phone Number: </strong>012349509876543</p>
+        </div>
     </div>
-    <!--put work here-->
-    <!--footer section start -->
+            <!--put work here-->
+            <!--footer section start -->
     <div class="footer_section layout_padding">
         <div class="container">
             <div class="social_icon">
@@ -109,47 +104,47 @@
         </div>
     </div>
     <!--footer section end -->
-    <!--copyright section start -->
-    <div class="copyright_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <p class="copyright_text">2020 All Rights Reserved Design by <a href="https://html.design/"> Free Html Templates</p>
+            <!--copyright section start -->
+            <div class="copyright_section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p class="copyright_text">2020 All Rights Reserved Design by <a href="https://html.design/"> Free Html Templates</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!--copyright section end -->
-    <!-- Javascript files-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/plugin.js"></script>
-    <script>
+            <!--copyright section end -->
+            <!-- Javascript files-->
+            <script src="js/jquery.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.bundle.min.js"></script>
+            <script src="js/jquery-3.0.0.min.js"></script>
+            <script src="js/plugin.js"></script>
+            <script>
 
-        function acceptCCRequest() {
-            alert("Credit Card Request Accepted");
 
-        }
-        function denyCCRequest() {
-            alert("Credit Card Request Denied");
-        }
 
-    </script>
-    <!-- sidebar -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/custom.js"></script>
-    <!-- javascript -->
-    <script src="js/owl.carousel.js"></script>
-    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".fancybox").fancybox({
-                openEffect: "none",
-                closeEffect: "none"
-            });
-    </script>
+
+
+
+
+
+
+            </script>
+            <!-- sidebar -->
+            <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+            <script src="js/custom.js"></script>
+            <!-- javascript -->
+            <script src="js/owl.carousel.js"></script>
+            <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $(".fancybox").fancybox({
+                        openEffect: "none",
+                        closeEffect: "none"
+                    });
+            </script>
 
 </body>
 </html>
