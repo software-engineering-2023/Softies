@@ -58,7 +58,10 @@
                             <a class="nav-link" href="Technical_Issue_Page.html">REPORT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="images/search-icon.png"></a>
+                            <a class="nav-link" href="Notifications.html">NOTIFICATIONS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">LOG OUT</a>
                         </li>
                     </ul>
                 </div>
@@ -82,13 +85,7 @@
                             <input type="text"
                                    name="firstname"
                                    id="firstname"
-                                   placeholder="First name"
-                                   class="formbold-form-input" />
-
-                            <input type="text"
-                                   name="lastname"
-                                   id="lastname"
-                                   placeholder="Last name"
+                                   placeholder="Name"
                                    class="formbold-form-input" />
                         </div>
                     </div>
@@ -134,11 +131,6 @@
                                id="address"
                                placeholder="Street address"
                                class="formbold-form-input formbold-mb-3" />
-                        <input type="text"
-                               name="address2"
-                               id="address2"
-                               placeholder="Street address line 2"
-                               class="formbold-form-input" />
                     </div>
 
                     <div class="formbold-mb-3 formbold-input-wrapp">
@@ -146,38 +138,13 @@
 
                         <div>
                             <input type="text"
-                                   name="areacode"
-                                   id="areacode"
-                                   placeholder="Area code"
-                                   class="formbold-form-input formbold-w-45" />
-
-                            <input type="text"
                                    name="phone"
                                    id="phone"
                                    placeholder="Phone number"
-                                   class="formbold-form-input" />
+                                   class="formbold-form-input" 
+                                   maxlength="11"/>
                         </div>
                     </div>
-
-                    <div class="formbold-input-flex">
-                        <div>
-                            <label for="post" class="formbold-form-label"> Post/Zip code </label>
-                            <input type="text"
-                                   name="post"
-                                   id="post"
-                                   placeholder="ex:8976"
-                                   class="formbold-form-input" />
-                        </div>
-                        <div>
-                            <label for="city" class="formbold-form-label"> City </label>
-                            <input type="text"
-                                   name="city"
-                                   id="city"
-                                   placeholder="ex: New York"
-                                   class="formbold-form-input" />
-                        </div>
-                    </div>
-
                     <div class="formbold-mb-3">
                         <label for="upload" class="formbold-form-label">
                             Upload Signature
@@ -186,31 +153,6 @@
                                name="upload"
                                id="upload"
                                class="formbold-form-input formbold-form-file" />
-                    </div>
-
-                    <div class="formbold-checkbox-wrapper">
-                        <label for="supportCheckbox" class="formbold-checkbox-label">
-                            <div class="formbold-relative">
-                                <input type="checkbox"
-                                       id="supportCheckbox"
-                                       class="formbold-input-checkbox" />
-                                <div class="formbold-checkbox-inner">
-                                    <span class="formbold-opacity-0">
-                                        <svg width="11"
-                                             height="8"
-                                             viewBox="0 0 11 8"
-                                             class="formbold-stroke-current"
-                                             fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8.81868 0.688604L4.16688 5.4878L2.05598 3.29507C1.70417 2.92271 1.1569 2.96409 0.805082 3.29507C0.453266 3.66742 0.492357 4.24663 0.805082 4.61898L3.30689 7.18407C3.54143 7.43231 3.85416 7.55642 4.16688 7.55642C4.47961 7.55642 4.79233 7.43231 5.02688 7.18407L10.0696 2.05389C10.4214 1.68154 10.4214 1.10233 10.0696 0.729976C9.71776 0.357624 9.17049 0.357625 8.81868 0.688604Z"
-                                                  fill="white" />
-                                        </svg>
-                                    </span>
-                                </div>
-                            </div>
-                            I agree to the defined
-                            <a href="#"> terms, conditions, and policies</a>
-                        </label>
                     </div>
                 </div>
             </div>
@@ -465,24 +407,39 @@
 
         // create a function that validates the user input
         function validateForm() {
-            var firstname = document.querySelector("input[name=firstname]").value;
-            var lastname = document.querySelector("input[name=lastname]").value;
+            var name = document.querySelector("input[name=firstname]").value;
             var age = document.querySelector("input[name=age]").value;
             var dob = document.querySelector("input[name=dob]").value;
             var email = document.querySelector("input[name=email]").value;
             var address = document.querySelector("input[name=address]").value;
-            var address2 = document.querySelector("input[name=address2]").value;
-            var areacode = document.querySelector("input[name=areacode]").value;
             var phone = document.querySelector("input[name=phone]").value;
-            var post = document.querySelector("input[name=post]").value;
-            var city = document.querySelector("input[name=city]").value;
             var upload = document.querySelector("input[name=upload]").value;
-            var supportCheckbox = document.querySelector("input[name=supportCheckbox]").value;
             var element = document.getElementById("occupation");
             var gender = element.options[element.selectedIndex].text;
-            if (firstname && lastname && age && dob && email && address && address2 && areacode && phone && post && city && upload && supportCheckbox && gender) {
+            if (name&& age && dob && email && address && phone && upload && gender) {
                 alert("Request submitted successfully!");
                 window.location.assign("Client_Home.html");
+            }else if (!name&& age && dob && email && address && phone && upload && gender) {
+                alert("Please enter a name!");
+            }
+            else if (isNaN(phone)) {
+                alert("Invalid phone Number. Please enter digits.");
+                            } 
+            else if(phone<11){
+                    alert("Invalid phone Number. Please enter correct phone number.");     
+                 }  
+            else if (name&& !age && dob && email && address && phone && upload && gender) {
+                alert("Please enter an age!");
+            }else if (name&& age && !dob && email && address && phone && upload && gender) {
+                alert("Please enter a date of birth!");
+            }else if (name&& age && dob && !email && address && phone && upload && gender) {
+                alert("Please enter an email!");
+            }else if (name&& age && dob && email && !address && phone && upload && gender) {
+                alert("Please enter an address!");
+            }else if (name&& age && dob && email && address && !phone && upload && gender) {
+                alert("Please enter a phone number!");
+            }else if (name&& age && dob && email && address && phone && !upload && gender) {
+                alert("Please upload a copy of your national ID!");
             }
             else {
                 alert("Please fill in all the necessary fields");
