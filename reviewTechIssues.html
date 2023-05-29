@@ -43,25 +43,22 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">HOME</a>
+                            <a class="nav-link" href="adminHomePage.html">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">ABOUT</a>
+                            <a class="nav-link" href="adminDetails.html">ACOUNT</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="reviewTechIssues.html">ISSUES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="services.html">SERVICES</a>
+                            <a class="nav-link" href="adminsBankers.html">BANKERS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">WEB</a>
+                            <a class="nav-link" href="login.html">LOGOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">ELEMENTS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">CONTACT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="images/search-icon.png"></a>
+                            <a class="nav-link" href="notifications.html"><img src="images/icons8-bell-64.png"></a>
                         </li>
                     </ul>
                 </div>
@@ -69,155 +66,166 @@
         </div>
     </div>
     <!--header section end -->
-    <div class="content">
+    <h1>Technical Issue Reports</h1>
+    <div class="table-responsive">
 
-        <div class="container">
-            <h2 class="mb-5">My Bank Transactions</h2>
+        <table class="table custom-table">
+            <thead>
+                <tr>
+                    <th scope="col">Report ID</th>
+                    <th scope="col">Client Name</th>
+                    <th scope="col">State</th>
+                    <th scope="col">  </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr scope="row">
+                    <td>
+                        123456
+                    </td>
+                    <td>
+                        Client
+                    </td>
+                    <td>
+                        Report Date
+                    </td>
+                    <td>
+                        Not handled
+                    </td>
+                    <td>
+                        <input type="submit" value="View Report" onclick="viewTechReport()" style="background-color: darkviolet; color: White; cursor: pointer; border-radius: 20px; font-size: 14px; font-weight: bold; padding: 15px; border-color: Black; border-block-width: medium">
+                    </td>
+                </tr>
 
-            <div class="table-responsive">
+                <tr>
+                    <td>
+                        312312
+                    </td>
+                    <td>
+                        Neveen Yahia Fahmy
+                    </td>
+                    <td>
+                        23/3/2023
+                    </td>
+                    <td>
+                        Handled
+                    </td>
+                    <td>
+                        <input type="submit" value="View Report" onclick="viewTechReport()" style="background-color: darkviolet; color: White; cursor: pointer; border-radius: 20px; font-size: 14px; font-weight: bold; padding: 15px; border-color: Black; border-block-width: medium">
+                    </td>
+                </tr>
 
-                <table class="table custom-table">
-                    <thead>
-                        <tr>
+                <tr>
+                    <td>
+                        332211
+                    </td>
+                    <td>
+                        Maryse Maged Samuel
+                    </td>
+                    <td>
+                        23/2/2023
+                    </td>
+                    <td>
+                        Handled
+                    </td>
+                    <td>
+                        <input type="submit" value="View Report" onclick="viewTechReport()" style="background-color: darkviolet; color: White; cursor: pointer; border-radius: 20px; font-size: 14px; font-weight: bold; padding: 15px; border-color: Black; border-block-width: medium">
+                    </td>
+                </tr>
 
-                            <th scope="col">ID</th>
-                            <th scope="col">Client</th>
-                            <th scope="col">Details</th>
-                            <th scope="col">Button for handling</th>
-                            <th scope="col">Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr scope="row">
+                <tr>
+                    <td>
+                        112233
+                    </td>
+                    <td>
+                        Haya Ahmed ElSarraf
+                    </td>
+                    <td>
+                        15/2/2023
+                    </td>
+                    <td>
+                        Handled
+                    </td>
+                    <td>
+                        <input type="submit" value="View Report" onclick="viewTechReport()" style="background-color: darkviolet; color: White; cursor: pointer; border-radius: 20px; font-size: 14px; font-weight: bold; padding: 15px; border-color: Black; border-block-width: medium">
+                    </td>
+                </tr>
 
+                <tr>
+                    <td>
+                        654321
+                    </td>
+                    <td>
+                        Deema Magdy Barakat
+                    </td>
+                    <td>
+                        17/1/2023
+                    </td>
+                    <td>
+                        Not handled
+                    </td>
+                    <td>
+                        <input type="submit" value="View Report" onclick="viewTechReport()" style="background-color: darkviolet; color: White; cursor: pointer; border-radius: 20px; font-size: 14px; font-weight: bold; padding: 15px; border-color: Black; border-block-width: medium">
+                    </td>
+                </tr>
 
-
-                            <td>
-                                BFGE139234264
-                            </td>
-                            <td>
-                                Cash Withdrawl
-                                <small class="d-block">28 Sep 2022, at 5:35PM</small>
-                            </td>
-                            <td> - EGP 4000.00 </td>
-                            <td>
-                                <a href="#"><img src="images/success.png"></a>
-                            </td>
-                            <td>Successful</td>
-
-                        </tr>
-
-                        <tr>
-
-                            <td>
-                                ETRU648273923
-                            </td>
-                            <td>
-                                Carrefour
-                                <small class="d-block">1 Oct 2022, at 11:48AM</small>
-                            </td>
-                            <td> - EGP 350.00 </td>
-                            <td>
-                                <a href="#"><img src="images/success.png"></a>
-                            </td>
-                            <td>Successful</td>
-                        </tr>
-                        <tr>
-
-                            <td>
-                                YEBJ762408256
-                            </td>
-                            <td>
-                                Cash Deposit
-                                <small class="d-block">11 Nov 2022, at 7:22PM</small>
-                            </td>
-                            <td> EGP 500.00 </td>
-                            <td>
-                                <a href="#"><img src="images/failed.png"></a>
-                            </td>
-                            <td>Failed</td>
-                        </tr>
-                        <tr>
-
-                            <td>
-                                SMNG376502458
-                            </td>
-                            <td>
-                                Zara
-                                <small class="d-block">7 Jan 2023, at 3:18PM</small>
-                            </td>
-                            <td> - EGP 1499.00 </td>
-                            <td>
-                                <a href="#"><img src="images/success.png"></a>
-                            </td>
-                            <td>Successful</td>
-                        </tr>
-
-                    </tbody>
-                </table>
-            </div>
-
-
-        </div>
-
-    </div>
-    <!--put work here-->
-    <!--footer section start -->
-    <div class="footer_section layout_padding">
-        <div class="container">
-            <div class="social_icon">
-                <ul>
-                    <li><a href="#"><img src="images/fb-icon.png"></a></li>
-                    <li><a href="#"><img src="images/twitter-icon.png"></a></li>
-                    <li><a href="#"><img src="images/linkdin-icon.png"></a></li>
-                    <li><a href="#"><img src="images/instagram-icon.png"></a></li>
-                    <li><a href="#"><img src="images/youtub-icon.png"></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!--footer section end -->
-    <!--copyright section start -->
-    <div class="copyright_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <p class="copyright_text">2020 All Rights Reserved Design by <a href="https://html.design/"> Free Html Templates</p>
+            </tbody>
+        </table>s
+        <!--put work here-->
+        <!--footer section start -->
+        <div class="footer_section layout_padding">
+            <div class="container">
+                <div class="social_icon">
+                    <ul>
+                        <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                        <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                        <li><a href="#"><img src="images/linkdin-icon.png"></a></li>
+                        <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+                        <li><a href="#"><img src="images/youtub-icon.png"></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-    <!--copyright section end -->
-    <!-- Javascript files-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/plugin.js"></script>
-    <script>
+        <!--footer section end -->
+        <!--copyright section start -->
+        <div class="copyright_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="copyright_text">2020 All Rights Reserved Design by <a href="https://html.design/"> Free Html Templates</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--copyright section end -->
+        <!-- Javascript files-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.0.0.min.js"></script>
+        <script src="js/plugin.js"></script>
+        <script>
+            function viewTechReport() {
+                window.location.assign("techIssuePage.html");
+            }
 
 
 
 
-
-
-
-
-
-    </script>
-    <!-- sidebar -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/custom.js"></script>
-    <!-- javascript -->
-    <script src="js/owl.carousel.js"></script>
-    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".fancybox").fancybox({
-                openEffect: "none",
-                closeEffect: "none"
-            });
-    </script>
+        </script>
+        <!-- sidebar -->
+        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/custom.js"></script>
+        <!-- javascript -->
+        <script src="js/owl.carousel.js"></script>
+        <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".fancybox").fancybox({
+                    openEffect: "none",
+                    closeEffect: "none"
+                });
+        </script>
 
 </body>
 </html>

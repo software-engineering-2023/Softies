@@ -468,10 +468,44 @@ button {
     text-align: center;
 }
 
+.myButton {
+    background-color: darkviolet;
+    color: white;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.send_textt {
+    width: 100%;
+    float: left;
+}
+
+
+    .send_textt div:hover {
+        color: #000;
+        background-color: #ffffff;
+    }
+
+    .send_textt div {
+        width: 100%;
+        float: left;
+        text-align: center;
+        font-size: 18px;
+        color: #ffffff;
+        background-color: #8929cf;
+        padding: 10px 0px;
+        margin-top: 40px;
+    }
+
+
 .send_text {
     width: 100%;
     float: left;
 }
+
 
 .send_text a:hover {
     color: #000;

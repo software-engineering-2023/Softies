@@ -29,30 +29,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-    <style>
 
-        .send_textt {
-            width: 100%;
-            float: left;
-        }
-
-
-            .send_textt a:hover {
-                color: #000;
-                background-color: #ffffff;
-            }
-
-            .send_textt a {
-                width: 100%;
-                float: left;
-                text-align: center;
-                font-size: 18px;
-                color: #ffffff;
-                background-color: #8929cf;
-                padding: 10px 0px;
-                margin-top: 40px;
-            }
-    </style>
 </head>
 <body>
     <!--header section start -->
@@ -98,62 +75,16 @@
         </div>
     </div>
     <!--header section end -->
-    <div class="content">
-
-        <div class="container">
-            <h2 class="mb-5">My Clients</h2>
-
-            <div class="table-responsive">
-
-                <table class="table custom-table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Client Useraname</th>
-                            <th scope="col">Name</th>
-                            <th scope="col"> </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr scope="row">
-                            <td>
-                                client
-                            </td>
-                            <td>
-                                Client
-                            </td>
-                            <td>
-                                <input type="submit" value="View Account" onclick="viewClientAccount()" style="background-color: darkviolet; color: White; border-radius: 20px; font-size: 14px;font-weight:bold; padding: 15px; border-color: Black; border-block-width:medium">
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                nevo_is_cute
-                            </td>
-                            <td>
-                                Neveen Yahia Fahmy
-                            </td>
-                            <td>
-                                <input type="submit" value="View Account" onclick="viewClientNevo()" style="background-color: darkviolet; color: White; border-radius: 20px; font-size: 14px;font-weight:bold; padding: 15px; border-color: Black; border-block-width:medium">
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                mizo_amar
-                            </td>
-                            <td>
-                                Maryse Maged Samuel
-                            </td>
-                            <td>
-                                <input type="submit" value="View Account" onclick="viewClientMizo()" style="background-color: darkviolet; color: White; border-radius: 20px; font-size: 14px;font-weight:bold; padding: 15px; border-color: Black; border-block-width:medium">
-                            </td>
-                        </tr>
-
-                    </tbody>
-                </table>
-            </div>
-        </div>
+    <!--put work here-->
+    <br />
+    <h1>Loan Application</h1>
+    <div>
+        <p>Client: client</p>
+        <p>Application ID: 123456</p>
+        <p>Requested Amount: 15,000.00</p>
+        <p>proof of income: </p>
+        <input type="submit" value="accept request" onclick="acceptLoanRequest()" style="background-color: white; color: black; cursor:pointer; border-radius: 20px; font-size: 16px;font-weight:bold; padding: 15px; border-color: green; border-block-width:medium">
+        <input type="submit" value="deny request" onclick="denyLoanRequest()" style="background-color: white; color: black; cursor: pointer; border-radius: 20px; font-size: 16px; font-weight: bold; padding: 15px; border-color: red; border-block-width: medium ">
 
     </div>
     <!--put work here-->
@@ -191,23 +122,13 @@
     <script src="js/plugin.js"></script>
     <script>
 
+        function acceptLoanRequest() {
+            alert("Loan Request Accepted");
 
-
-
-        function viewClientAccount() {
-            window.location.assign("bankersClient.html");
         }
-
-        function viewClientNevo() {
-            window.location.assign("clientNevo.html");
+        function denyLoanRequest() {
+            alert("Loan Request Denied");
         }
-
-        function viewClientMizo() {
-            window.location.assign("clientMizo.html");
-        }
-
-
-
 
     </script>
     <!-- sidebar -->

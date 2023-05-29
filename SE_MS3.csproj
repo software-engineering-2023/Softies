@@ -68,11 +68,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="about.html" />
+    <Content Include="adminDetails.html" />
     <Content Include="adminHomePage.html" />
+    <Content Include="adminsBankers.html" />
     <Content Include="banker.html" />
+    <Content Include="bankerDizo.html" />
+    <Content Include="bankerHaya.html" />
     <Content Include="bankersClient.html" />
+    <Content Include="bankersDetails.html" />
+    <Content Include="ccApplicationPage.html" />
     <Content Include="ccApplications.html" />
+    <Content Include="ccIssuePage.html" />
     <Content Include="clientAccounts.html" />
+    <Content Include="clientMizo.html" />
+    <Content Include="clientNevo.html" />
     <Content Include="clients.html" />
     <Content Include="contact.html" />
     <Content Include="css\animate.min.css" />
@@ -105,6 +114,12 @@
     <Content Include="images\icon-2.png" />
     <Content Include="images\icon-3.png" />
     <Content Include="images\icon-4.png" />
+    <Content Include="images\icons8-bank-cards-64.png" />
+    <Content Include="images\icons8-bell-64.png" />
+    <Content Include="images\icons8-client-64.png" />
+    <Content Include="images\icons8-customer-support-64.png" />
+    <Content Include="images\icons8-debt-64.png" />
+    <Content Include="images\icons8-test-account-64.png" />
     <Content Include="images\instagram-icon.png" />
     <Content Include="images\linkdin-icon.png" />
     <Content Include="images\logo4.png" />
@@ -125,10 +140,12 @@
     <Content Include="js\plugin.js" />
     <Content Include="js\popper.min.js" />
     <Content Include="js\slider-setting.js" />
+    <Content Include="loanApplicationPage.html" />
     <Content Include="loanApplications.html" />
     <Content Include="reviewCCIssues.html" />
     <Content Include="reviewTechIssues.html" />
     <Content Include="services.html" />
+    <Content Include="techIssuePage.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
