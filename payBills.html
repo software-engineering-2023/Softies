@@ -36,7 +36,13 @@
     <div class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="logo"><a href="Client_Home.html"><img src="images/Banko3.jpg"></a></div>
+                <div class="logo"><a href="index.html"><img class = new src="images/Banko3.jpg"> <style>
+                    .new {
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                    }
+                  </style></a></div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -68,7 +74,7 @@
     <!--header section end -->
 
     <head>
-        <title>Pay Your Bills</title>
+        <title>Pay Your Credit Card Bills</title>
         <style>
         /* Internal CSS style */
         h1 {
@@ -105,7 +111,7 @@
         </style>
         </head>
         <body>
-        <h1>Pay Your Bills</h1>
+        <h1>Pay Your  Credit Card Bills</h1>
         <form action="payBills.html" method="post">
         <table>
         <tr>
@@ -116,25 +122,25 @@
         <th>Amount to Pay</th>
         </tr>
         <tr>
-        <td><input type="radio" name="bill" value="electricity"></td>
-        <td>Electricity Bill</td>
+        <td><input type="radio" name="bill" value="card_1"></td>
+        <td>card_1 Bill</td>
         <td>01/01/2022</td>
-        <td id="electricityDue">EGP100</td>
-        <td><input type="number" name="electricity" id="electricityPay" min="0" max="100"></td>
+        <td id="card_1Due">EGP100</td>
+        <td><input type="number" name="card_1" id="card_1Pay" min="0" max="100"></td>
         </tr>
         <tr>
-        <td><input type="radio" name="bill" value="water"></td>
-        <td>Water Bill</td>
+        <td><input type="radio" name="bill" value="card_2"></td>
+        <td>card_2 Bill</td>
         <td>01/02/2022</td>
-        <td id="waterDue">EGP50</td>
-        <td><input type="number" name="water" id="waterPay" min="0" max="50"></td>
+        <td id="card_2Due">EGP50</td>
+        <td><input type="number" name="card_2" id="card_2Pay" min="0" max="50"></td>
         </tr>
         <tr>
-        <td><input type="radio" name="bill" value="internet"></td>
-        <td>Internet Bill</td>
+        <td><input type="radio" name="bill" value="card_3"></td>
+        <td>card_3 Bill</td>
         <td>01/03/2022</td>
-        <td id="internetDue">EGP75</td>
-        <td><input type="number" name="internet" id="internetPay" min="0" max="75"></td>
+        <td id="card_3Due">EGP75</td>
+        <td><input type="number" name="card_3" id="card_3Pay" min="0" max="75"></td>
         </tr>
        
         </table>
@@ -218,17 +224,17 @@
        
        // Use a switch statement to assign the variables based on the bill value
         switch (bill) {
-        case 'electricity':
-        dueElement = document.getElementById('electricityDue');
-        payElement = document.getElementById('electricityPay');
+        case 'card_1':
+        dueElement = document.getElementById('card_1Due');
+        payElement = document.getElementById('card_1Pay');
         break;
-        case 'water':
-        dueElement = document.getElementById('waterDue');
-        payElement = document.getElementById('waterPay');
+        case 'card_2':
+        dueElement = document.getElementById('card_2Due');
+        payElement = document.getElementById('card_2Pay');
         break;
-        case 'internet':
-        dueElement = document.getElementById('internetDue');
-        payElement = document.getElementById('internetPay');
+        case 'card_3':
+        dueElement = document.getElementById('card_3Due');
+        payElement = document.getElementById('card_3Pay');
         break;
        }
        
@@ -312,13 +318,13 @@ for (let bill of bills) {
 
   // Use a switch statement to assign the variable based on the bill value
   switch (billValue) {
-    case 'electricity':
+    case 'card_1':
       originalDue = 100;
       break;
-    case 'water':
+    case 'card_2':
       originalDue = 50;
       break;
-    case 'internet':
+    case 'card_3':
       originalDue = 75;
       break;
   }
